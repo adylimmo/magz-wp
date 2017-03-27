@@ -1,0 +1,3063 @@
+# Copyright (C) 2016 pixel-industry
+# This file is distributed under the Dual-licensed.  PHP under GNU General Public License, JS and CSS under ThemeForest License Terms.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ConsultingPress\n"
+"Report-Msgid-Bugs-To: http://pixel-industry.com\n"
+"POT-Creation-Date: 2017-01-28 10:30+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: PIXEL INDUSTRY <info@pixel-industry.com>\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:7 includes/configuration/theme-options.php:791
+msgid ""
+"We're sorry, we couldn't find the page you're looking for. The reason might be "
+"that it doesn't exist anymore, it has moved elsewhere or the address is not "
+"correct."
+msgstr ""
+
+#: blog.php:87 single.php:50
+msgid "Pages:"
+msgstr ""
+
+#: blog.php:91 includes/configuration/theme-options.php:494 single.php:54
+msgid "Page"
+msgstr ""
+
+#: blog.php:96 includes/composer-elements/feature-box/feature-box.php:157
+#: includes/composer-elements/feature-box/feature-box.php:206
+#: includes/composer-elements/icon-list/icon-list.php:170
+#: includes/composer-elements/latest-posts/latest-posts.php:192
+#: includes/composer-elements/services-carousel/services-carousel.php:141
+#: includes/composer-elements/team-member/team-member.php:50 index.php:80
+#: search.php:59
+msgid "Read more"
+msgstr ""
+
+#: blog.php:109 case-studies.php:106 index.php:90 search.php:69
+#: taxonomy-case-studies-category.php:83
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: case-studies.php:93 taxonomy-case-studies-category.php:71
+msgid "View case study"
+msgstr ""
+
+#: comments.php:8
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:23
+msgid "Comments"
+msgstr ""
+
+#: comments.php:44
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:52
+msgid "(required)"
+msgstr ""
+
+#: comments.php:60
+msgid "Comment"
+msgstr ""
+
+#: comments.php:67 includes/composer-elements/key-contacts/key-contacts.php:26
+#: includes/composer-elements/team-member/team-member.php:33
+msgid "Name"
+msgstr ""
+
+#: comments.php:73
+msgid "Email"
+msgstr ""
+
+#: comments.php:79
+msgid "Website (optional)"
+msgstr ""
+
+#: core/components/theme-options/custom-fields/select_image/field_select_image.php:58
+msgid "Select an item"
+msgstr ""
+
+#: core/components/theme-options/custom-fields/select_image/field_select_image.php:140
+msgid "No items of this type were found."
+msgstr ""
+
+#: core/components/theme-options/custom-fields/select_label/field_select_label.php:64
+#: core/components/theme-options/custom-fields/select_text/field_select_text.php:65
+msgid "Add More"
+msgstr ""
+
+#: core/components/theme-options/custom-fields/select_label/field_select_label.php:109
+#: core/components/theme-options/custom-fields/select_label/field_select_label.php:132
+msgid "Please set primary Menu."
+msgstr ""
+
+#: core/components/theme-options/custom-fields/select_text/field_select_text.php:91
+#: core/components/theme-options/custom-fields/select_text/field_select_text.php:113
+msgid "Remove"
+msgstr ""
+
+#: core/libs/core.php:139
+msgid ""
+"Please activate <strong>Custom post types</strong> and <strong>MetaBox</strong> "
+"plugins."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:334
+#: includes/configuration/plugin-list.php:200
+msgid "Install Required Plugins"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:335
+#: includes/configuration/plugin-list.php:201
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: core/libs/external/class-tgm-plugin-activation.php:337
+#: includes/configuration/plugin-list.php:202
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: core/libs/external/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:340
+#: includes/configuration/plugin-list.php:203
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: core/libs/external/class-tgm-plugin-activation.php:343
+#: includes/configuration/plugin-list.php:204
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: core/libs/external/class-tgm-plugin-activation.php:349
+#: includes/configuration/plugin-list.php:205
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: core/libs/external/class-tgm-plugin-activation.php:355
+#: includes/configuration/plugin-list.php:210
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure maximum "
+"compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: core/libs/external/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: core/libs/external/class-tgm-plugin-activation.php:367
+#: includes/configuration/plugin-list.php:207
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: core/libs/external/class-tgm-plugin-activation.php:373
+#: includes/configuration/plugin-list.php:208
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:378
+#: includes/configuration/plugin-list.php:212
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:392
+#: includes/configuration/plugin-list.php:214
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:393
+#: core/libs/external/class-tgm-plugin-activation.php:921
+#: core/libs/external/class-tgm-plugin-activation.php:2645
+#: core/libs/external/class-tgm-plugin-activation.php:3694
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:394
+#: core/libs/external/class-tgm-plugin-activation.php:3273
+#: includes/configuration/plugin-list.php:215
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:395
+#: core/libs/external/class-tgm-plugin-activation.php:3066
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: core/libs/external/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: core/libs/external/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. Please "
+"update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: core/libs/external/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:610
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:611
+msgid "Update Required"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:728
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:1028
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug and "
+"renaming did not work."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:1028
+#: core/libs/external/class-tgm-plugin-activation.php:1031
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin according "
+"to the WordPress guidelines."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:1031
+msgid ""
+"The remote plugin package consists of more than one file, but the files are not "
+"packaged in a folder."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:1215
+#: core/libs/external/class-tgm-plugin-activation.php:3062
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: core/libs/external/class-tgm-plugin-activation.php:2076
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2385
+msgid "Required"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2388
+msgid "Recommended"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2404
+msgid "WordPress Repository"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2407
+msgid "External Source"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2410
+msgid "Pre-Packaged"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2427
+msgid "Not Installed"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2431
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2433
+msgid "Active"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2439
+msgid "Required Update not Available"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2442
+msgid "Requires Update"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2445
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: core/libs/external/class-tgm-plugin-activation.php:2454
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: core/libs/external/class-tgm-plugin-activation.php:2500
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: core/libs/external/class-tgm-plugin-activation.php:2504
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: core/libs/external/class-tgm-plugin-activation.php:2508
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: core/libs/external/class-tgm-plugin-activation.php:2512
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2594
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2602
+msgid "Installed version:"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2610
+msgid "Minimum required version:"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2622
+msgid "Available version:"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2645
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2659
+msgid "Plugin"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2660
+msgid "Source"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2661
+#: includes/composer-elements/call-to-action/call-to-action.php:21
+msgid "Type"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2665
+msgid "Version"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2666
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: core/libs/external/class-tgm-plugin-activation.php:2715
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: core/libs/external/class-tgm-plugin-activation.php:2720
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: core/libs/external/class-tgm-plugin-activation.php:2726
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2798
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2831
+msgid "Install"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2837
+msgid "Update"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2840
+msgid "Activate"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2871
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2873
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2914
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:2916
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3022
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3048
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3272
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: core/libs/external/class-tgm-plugin-activation.php:3612
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: core/libs/external/class-tgm-plugin-activation.php:3615
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: core/libs/external/class-tgm-plugin-activation.php:3617
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3621
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: core/libs/external/class-tgm-plugin-activation.php:3623
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3623
+#: core/libs/external/class-tgm-plugin-activation.php:3631
+msgid "Show Details"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3623
+#: core/libs/external/class-tgm-plugin-activation.php:3631
+msgid "Hide Details"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3624
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: core/libs/external/class-tgm-plugin-activation.php:3626
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3629
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: core/libs/external/class-tgm-plugin-activation.php:3631
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: core/libs/external/class-tgm-plugin-activation.php:3632
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: core/libs/external/class-tgm-plugin-activation.php:3634
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: core/libs/support-menu.php:82
+msgid "Version:"
+msgstr ""
+
+#: core/libs/support-menu.php:90
+msgid "Documentation"
+msgstr ""
+
+#: core/libs/support-menu.php:91
+msgid ""
+"Theme comes with Documentation where you can find how to Setup and use the theme. "
+"Documentation can be found in archive downloaded from ThemeForest."
+msgstr ""
+
+#: core/libs/support-menu.php:97
+msgid "Updates"
+msgstr ""
+
+#: core/libs/support-menu.php:99
+msgid ""
+"To receive notification for theme updates please install official ThemeForest "
+"plugin for updates: "
+msgstr ""
+
+#: core/libs/support-menu.php:100 core/libs/support-menu.php:103
+msgid "Envato Market - Updates."
+msgstr ""
+
+#: core/libs/support-menu.php:102
+msgid ""
+"To receive notification for theme updates please use official ThemeForest plugin "
+"for updates: "
+msgstr ""
+
+#: core/libs/support-menu.php:113
+msgid "Support"
+msgstr ""
+
+#: core/libs/support-menu.php:115
+msgid ""
+"If you can't find answer to your problem in Documentation please use one of the "
+"following options."
+msgstr ""
+
+#: core/libs/support-menu.php:117
+msgid "We have dedicated support team that will help you with your problem."
+msgstr ""
+
+#: core/libs/support-menu.php:127
+msgid "Click here to Login with Envato "
+msgstr ""
+
+#: core/libs/support-menu.php:129
+msgid "account with just one click"
+msgstr ""
+
+#: core/libs/support-menu.php:136
+msgid "OR"
+msgstr ""
+
+#: core/libs/support-menu.php:144
+msgid "Existing user"
+msgstr ""
+
+#: core/libs/support-menu.php:145
+msgid "Click here to login."
+msgstr ""
+
+#: core/libs/support-menu.php:151
+msgid "Not registered?"
+msgstr ""
+
+#: core/libs/support-menu.php:152
+msgid "Click here to create your account."
+msgstr ""
+
+#: footer.php:25 footer.php:53 sidebar.php:88
+msgid "Widget"
+msgstr ""
+
+#: footer.php:27 footer.php:55 sidebar.php:90
+msgid "This is widget area. Set widget here."
+msgstr ""
+
+#: includes/composer-elements/accordion/accordion.php:7
+msgid "Consulting Press - Default"
+msgstr ""
+
+#: includes/composer-elements/accordion/accordion.php:8
+msgid "Consulting Press - Boxed"
+msgstr ""
+
+#: includes/composer-elements/accordion/accordion.php:52
+#: includes/composer-elements/feature-box/feature-box.php:166
+msgid "White text"
+msgstr ""
+
+#: includes/composer-elements/accordion/accordion.php:54
+msgid "Enable this if you have dark background."
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:9
+msgid "Banner box"
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:13
+#: includes/composer-elements/blockquote/blockquote.php:13
+#: includes/composer-elements/button/button.php:14
+#: includes/composer-elements/call-to-action/call-to-action.php:14
+#: includes/composer-elements/client-carousel/client-carousel.php:13
+#: includes/composer-elements/company-timeline/company-timeline.php:13
+#: includes/composer-elements/counter/counter.php:13
+#: includes/composer-elements/divider/divider.php:13
+#: includes/composer-elements/feature-box/feature-box.php:15
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:13
+#: includes/composer-elements/heading/heading.php:13
+#: includes/composer-elements/icon-list/icon-list.php:13
+#: includes/composer-elements/image-parallax/image-parallax.php:14
+#: includes/composer-elements/key-contacts/key-contacts.php:13
+#: includes/composer-elements/latest-posts/latest-posts.php:13
+#: includes/composer-elements/map/map.php:15
+#: includes/composer-elements/message-box/message-box.php:13
+#: includes/composer-elements/nivo-slider/nivo-slider.php:13
+#: includes/composer-elements/pricing-table/pricing-table.php:13
+#: includes/composer-elements/raw-code/raw-code.php:13
+#: includes/composer-elements/services-carousel/services-carousel.php:13
+#: includes/composer-elements/single-image/single-image.php:14
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:13
+#: includes/composer-elements/table/table.php:13
+#: includes/composer-elements/team-member/team-member.php:13
+#: includes/composer-elements/testimonial/testimonial.php:13
+#: includes/composer-elements/testimonials/testimonials.php:13
+msgid "Consulting Press"
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:21
+#: includes/composer-elements/counter/counter.php:21
+#: includes/composer-elements/feature-box/feature-box.php:59
+#: includes/composer-elements/message-box/message-box.php:53
+msgid "Icon color"
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:24
+#: includes/composer-elements/counter/counter.php:24
+#: includes/composer-elements/counter/counter.php:48
+#: includes/composer-elements/counter/counter.php:56
+#: includes/composer-elements/feature-box/feature-box.php:62
+#: includes/composer-elements/feature-box/feature-box.php:74
+msgid "By default is theme color."
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:29
+#: includes/composer-elements/company-timeline/company-timeline.php:27
+#: includes/composer-elements/counter/counter.php:62
+#: includes/composer-elements/feature-box/feature-box.php:95
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:33
+#: includes/composer-elements/heading/heading.php:31
+#: includes/composer-elements/icon-list/icon-list.php:149
+#: includes/composer-elements/nivo-slider/nivo-slider.php:47
+#: includes/composer-elements/pricing-table/pricing-table.php:31
+#: includes/composer-elements/services-carousel/services-carousel.php:54
+#: includes/composer-elements/services-carousel/services-carousel.php:113
+#: includes/composer-elements/team-member/team-member.php:26
+#: includes/configuration/post-metabox.php:118
+msgid "Title"
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:32
+#: includes/composer-elements/feature-box/feature-box.php:98
+#: includes/composer-elements/heading/heading.php:34
+msgid "Here you can enter main title."
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:38
+#: includes/composer-elements/button/button.php:22
+#: includes/composer-elements/company-timeline/company-timeline.php:37
+#: includes/composer-elements/feature-box/feature-box.php:104
+#: includes/composer-elements/feature-box/feature-box.php:132
+#: includes/composer-elements/icon-list/icon-list.php:47
+#: includes/composer-elements/icon-list/icon-list.php:72
+#: includes/composer-elements/icon-list/icon-list.php:115
+#: includes/composer-elements/icon-list/icon-list.php:159
+#: includes/composer-elements/message-box/message-box.php:36
+msgid "Text"
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:41
+#: includes/composer-elements/feature-box/feature-box.php:107
+msgid "Here you can enter feature box text description."
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:46
+#: includes/composer-elements/button/button.php:32
+#: includes/composer-elements/call-to-action/call-to-action.php:61
+#: includes/composer-elements/feature-box/feature-box.php:143
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:43
+#: includes/composer-elements/key-contacts/key-contacts.php:60
+#: includes/composer-elements/services-carousel/services-carousel.php:72
+#: includes/composer-elements/services-carousel/services-carousel.php:131
+msgid "Url (Link)"
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:54
+#: includes/composer-elements/call-to-action/call-to-action.php:52
+#: includes/composer-elements/pricing-table/pricing-table.php:68
+#: includes/composer-elements/services-carousel/services-carousel.php:139
+msgid "Button text"
+msgstr ""
+
+#: includes/composer-elements/banner-box/banner-box.php:56
+#: includes/composer-elements/banner-box/banner-box.php:87
+#: includes/composer-elements/pricing-table/pricing-table.php:70
+msgid "Contact us"
+msgstr ""
+
+#: includes/composer-elements/blockquote/blockquote.php:9
+#: includes/composer-elements/blockquote/blockquote.php:18
+msgid "Blockquote"
+msgstr ""
+
+#: includes/composer-elements/blockquote/blockquote.php:21
+msgid "Here you can blockquote text."
+msgstr ""
+
+#: includes/composer-elements/blockquote/blockquote.php:27
+#: includes/composer-elements/testimonial/testimonial.php:38
+#: includes/composer-elements/testimonials/testimonials.php:45
+msgid "Author"
+msgstr ""
+
+#: includes/composer-elements/blockquote/blockquote.php:30
+msgid "Here you can enter blockquote author."
+msgstr ""
+
+#: includes/composer-elements/button/button.php:10
+msgid "Button"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:15
+msgid "Empire button"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:25
+#: includes/composer-elements/call-to-action/call-to-action.php:55
+msgid "Here you can enter text that will apear on button."
+msgstr ""
+
+#: includes/composer-elements/button/button.php:35
+#: includes/composer-elements/call-to-action/call-to-action.php:64
+msgid "Here you can add link to button"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:42
+#: includes/composer-elements/feature-box/feature-box.php:20
+#: includes/composer-elements/latest-posts/latest-posts.php:18
+#: includes/composer-elements/message-box/message-box.php:18
+#: includes/composer-elements/services-carousel/services-carousel.php:19
+#: includes/composer-elements/testimonial/testimonial.php:19
+#: includes/composer-elements/testimonials/testimonials.php:19
+msgid "Style"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:44
+msgid "Here you can set button style."
+msgstr ""
+
+#: includes/composer-elements/button/button.php:55
+msgid "Alignment"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:57
+msgid "Here you can set button alignment"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:73
+#: includes/composer-elements/call-to-action/call-to-action.php:70
+msgid "Size"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:75
+#: includes/composer-elements/call-to-action/call-to-action.php:72
+msgid "Here you can choose button size"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:91
+#: includes/composer-elements/call-to-action/call-to-action.php:83
+#: includes/composer-elements/heading/heading.php:68
+msgid "Color Style"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:93
+#: includes/composer-elements/call-to-action/call-to-action.php:85
+msgid "Here you can edit button color style"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:108
+#: includes/composer-elements/call-to-action/call-to-action.php:96
+msgid "Button text color"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:111
+#: includes/composer-elements/call-to-action/call-to-action.php:99
+msgid "Choose text color"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:121
+#: includes/composer-elements/call-to-action/call-to-action.php:109
+msgid "Button background"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:124
+#: includes/composer-elements/call-to-action/call-to-action.php:112
+msgid "Choose button background color"
+msgstr ""
+
+#: includes/composer-elements/button/button.php:135
+msgid "Add icon"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:10
+msgid "Call to action"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:15
+msgid "Consulting Press button"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:23
+msgid "Here you can choose call to action type."
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:33
+msgid "Call to action text"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:36
+msgid "Here you can enter call to action description text."
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:43
+msgid "Call to action text color"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:46
+msgid "Choose call to action text color."
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:123
+msgid "Add button icon"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:140
+msgid "Social icons text"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:142
+#: includes/composer-elements/call-to-action/call-to-action.php:205
+msgid "Or connect with us:"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:143
+msgid "Here you can enter text that will apear before social icons."
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:164
+msgid "Url"
+msgstr ""
+
+#: includes/composer-elements/call-to-action/call-to-action.php:167
+#: includes/composer-elements/company-timeline/company-timeline.php:30
+#: includes/composer-elements/icon-list/icon-list.php:152
+msgid "Here you can enter list element title."
+msgstr ""
+
+#: includes/composer-elements/client-carousel/client-carousel.php:9
+msgid "Client Carousel"
+msgstr ""
+
+#: includes/composer-elements/client-carousel/client-carousel.php:18
+msgid "Images"
+msgstr ""
+
+#: includes/composer-elements/client-carousel/client-carousel.php:21
+msgid "Here you can select images that will show in carousel."
+msgstr ""
+
+#: includes/composer-elements/company-timeline/company-timeline.php:9
+msgid "Company timeline"
+msgstr ""
+
+#: includes/composer-elements/company-timeline/company-timeline.php:40
+#: includes/composer-elements/feature-box/feature-box.php:135
+#: includes/composer-elements/icon-list/icon-list.php:50
+#: includes/composer-elements/icon-list/icon-list.php:75
+#: includes/composer-elements/icon-list/icon-list.php:118
+#: includes/composer-elements/icon-list/icon-list.php:162
+#: includes/composer-elements/pricing-table/pricing-table.php:59
+msgid "Here you can enter list element text."
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:9
+msgid "Counter"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:29
+msgid "Number"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:31
+msgid "27045"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:32
+msgid "You can only enter counter number."
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:37
+msgid "Number mark"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:45
+msgid "Number color"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:53
+msgid "Number mark color"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:65
+msgid "Here you can enter counter title"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:70
+#: includes/composer-elements/nivo-slider/nivo-slider.php:55
+msgid "Title color"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:78
+#: includes/composer-elements/image-parallax/image-parallax.php:38
+msgid "Speed"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:80
+msgid "1500"
+msgstr ""
+
+#: includes/composer-elements/counter/counter.php:81
+msgid "Here you can enter counter speed"
+msgstr ""
+
+#: includes/composer-elements/divider/divider.php:9
+msgid "Dividers"
+msgstr ""
+
+#: includes/composer-elements/divider/divider.php:18
+msgid "Divider style"
+msgstr ""
+
+#: includes/composer-elements/divider/divider.php:20
+#: includes/composer-elements/heading/heading.php:20
+#: includes/composer-elements/icon-list/icon-list.php:20
+msgid "Here you can choose heading style."
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:11
+#: includes/widgets/widget-feature-box.php:38
+msgid "Feature box"
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:22
+msgid "Here you can choose box style."
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:40
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:25
+#: includes/composer-elements/image-parallax/image-parallax.php:19
+#: includes/composer-elements/nivo-slider/nivo-slider.php:37
+#: includes/composer-elements/services-carousel/services-carousel.php:93
+#: includes/composer-elements/single-image/single-image.php:19
+msgid "Image"
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:71
+msgid "Icon background color"
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:83
+#: includes/composer-elements/icon-list/icon-list.php:106
+#: includes/composer-elements/icon-list/icon-list.php:140
+msgid "Image icon"
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:86
+msgid "Use image as icon. This overide icon from iconpicker."
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:118
+msgid "List with icons"
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:119
+msgid "Here you can create list with icons."
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:155
+#: includes/composer-elements/icon-list/icon-list.php:168
+#: includes/composer-elements/icon-list/icon-list.php:188
+#: includes/composer-elements/team-member/team-member.php:57
+msgid "Read more text"
+msgstr ""
+
+#: includes/composer-elements/feature-box/feature-box.php:169
+msgid "Use for dark backgrounds"
+msgstr ""
+
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:9
+msgid "Featured pages carousel"
+msgstr ""
+
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:17
+msgid "Featured pages"
+msgstr ""
+
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:20
+msgid "Here you can enter featured pages."
+msgstr ""
+
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:28
+#: includes/composer-elements/services-carousel/services-carousel.php:96
+msgid "Here you can select service image."
+msgstr ""
+
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:36
+#: includes/composer-elements/services-carousel/services-carousel.php:57
+#: includes/composer-elements/services-carousel/services-carousel.php:116
+#: includes/composer-elements/testimonial/testimonial.php:33
+msgid "Here you can enter service title"
+msgstr ""
+
+#: includes/composer-elements/featured-pages-carousel/featured-pages-carousel.php:46
+#: includes/composer-elements/services-carousel/services-carousel.php:75
+#: includes/composer-elements/services-carousel/services-carousel.php:134
+msgid "Here you can add link to service"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:9
+msgid "Heading"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:18
+msgid "Heading style"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:40
+msgid "Title size"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:42
+#: includes/composer-elements/nivo-slider/nivo-slider.php:20
+msgid "Here you can choose main title size"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:56
+msgid "Subtitle"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:59
+msgid "Here you can enter subtitle."
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:70
+msgid "Here you can edit heading color style"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:79
+msgid "Main title color"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:82
+msgid "Choose main title color"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:91
+msgid "Subtitle color"
+msgstr ""
+
+#: includes/composer-elements/heading/heading.php:94
+msgid "Choose subtitle color"
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:9
+msgid "Icon Lists"
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:18
+#: includes/composer-elements/pricing-table/pricing-table.php:18
+msgid "List style"
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:82
+msgid "Url (link)"
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:85
+msgid "Here you can add url to list item."
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:109
+#: includes/composer-elements/icon-list/icon-list.php:143
+msgid "Here you can upload image to use as icon."
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:171
+msgid "Here you can enter list element read more text."
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:177
+#: includes/composer-elements/icon-list/icon-list.php:201
+msgid "Read more url"
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:180
+msgid "Here you can enter list element read more url."
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:190
+#: includes/composer-elements/icon-list/icon-list.php:233
+msgid "Explore our services"
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:191
+msgid "Here you can enter list read more text."
+msgstr ""
+
+#: includes/composer-elements/icon-list/icon-list.php:204
+msgid "Here you can enter list read more url."
+msgstr ""
+
+#: includes/composer-elements/image-parallax/image-parallax.php:10
+msgid "Image Parallax"
+msgstr ""
+
+#: includes/composer-elements/image-parallax/image-parallax.php:21
+#: includes/composer-elements/single-image/single-image.php:21
+msgid "Select image."
+msgstr ""
+
+#: includes/composer-elements/image-parallax/image-parallax.php:26
+msgid "Top"
+msgstr ""
+
+#: includes/composer-elements/image-parallax/image-parallax.php:32
+msgid "Left"
+msgstr ""
+
+#: includes/composer-elements/image-parallax/image-parallax.php:44
+#: includes/composer-elements/single-image/single-image.php:26
+msgid "Image size"
+msgstr ""
+
+#: includes/composer-elements/image-parallax/image-parallax.php:47
+msgid ""
+"Here you can define image size (width, height). You can enter only width or width "
+"and height to crop image ( Eg. 250, 250 ), or leave empty for default image size."
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:9
+#: includes/widgets/widget-key-contacts.php:136
+msgid "Key contacts"
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:19
+#: includes/composer-elements/team-member/team-member.php:19
+#: includes/composer-elements/team-member/team-member.php:42
+msgid "Short bio"
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:21
+#: includes/composer-elements/team-member/team-member.php:21
+msgid "Team member image."
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:28
+#: includes/composer-elements/team-member/team-member.php:35
+msgid "Team member first and last name."
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:34
+msgid "Position"
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:36
+msgid "Team member position."
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:40
+#: includes/configuration/theme-options.php:278
+#: includes/configuration/theme-options.php:279
+#: includes/configuration/theme-options.php:295
+msgid "Contact info"
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:43
+msgid "Here you can enter contact info."
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:51
+msgid "Contact info text"
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:53
+msgid "Here you can enter contact info text."
+msgstr ""
+
+#: includes/composer-elements/key-contacts/key-contacts.php:63
+msgid "Here you can add link to contact info text."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:9
+msgid "Latest posts"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:20
+msgid "Here you can select how to display posts."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:31
+msgid "Show posts by:"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:33
+#: includes/composer-elements/latest-posts/latest-posts.php:45
+msgid "Here you can select wich posts to show."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:43
+#: includes/configuration/post-metabox.php:231
+#: includes/configuration/post-metabox.php:290 template-parts/page-title.php:30
+#: template-parts/page-title.php:35
+msgid "Category"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:58
+msgid "Exclude posts"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:61
+msgid "Here you can exclude posts from category by post id."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:72
+msgid "Post IDs"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:75
+msgid ""
+"Enter posts IDs to display only those records ( Note: separate values by commas "
+"(,) )."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:87
+msgid "Number of posts"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:89
+msgid "9"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:90
+msgid "Here you can enter how many posts to show."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:96
+msgid "Hide date"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:99
+msgid "Here you can select to hide post date."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:105
+msgid "Hide post thumbnail"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:108
+msgid "Here you can select to hide post thumbnail."
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:114
+msgid "Hide read more"
+msgstr ""
+
+#: includes/composer-elements/latest-posts/latest-posts.php:117
+msgid "Here you can select to hide read more button."
+msgstr ""
+
+#: includes/composer-elements/map/map.php:11
+msgid "Map"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:20
+msgid "Api KEY"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:23
+#, php-format
+msgid "You can get key on: %s"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:29
+#: includes/composer-elements/map/map.php:95
+msgid "Latitude"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:31
+#: includes/composer-elements/map/map.php:97
+msgid "36.1699412"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:38
+#: includes/composer-elements/map/map.php:104
+msgid "Longitude"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:40
+#: includes/composer-elements/map/map.php:106
+msgid "-115.13982959999998"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:46
+msgid "Map style"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:48
+#: includes/composer-elements/map/map.php:142
+msgid "Enable or disable scrool on map."
+msgstr ""
+
+#: includes/composer-elements/map/map.php:60
+msgid "Map type"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:74
+msgid "Markers"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:85
+msgid "Multiple markers"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:113
+msgid "Info text"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:116
+msgid "Here you can write info text that will apear on marker click."
+msgstr ""
+
+#: includes/composer-elements/map/map.php:124
+msgid "Zoom"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:126
+msgid "8"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:127
+msgid "Here you can set zoom level."
+msgstr ""
+
+#: includes/composer-elements/map/map.php:132
+#: includes/composer-elements/nivo-slider/nivo-slider.php:114
+msgid "Height"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:134
+msgid "450"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:135
+msgid "Here you can set map height in px."
+msgstr ""
+
+#: includes/composer-elements/map/map.php:140
+msgid "Scrool"
+msgstr ""
+
+#: includes/composer-elements/map/map.php:207
+#, php-format
+msgid "Missing Google Maps API key. You can get key on:  %s"
+msgstr ""
+
+#: includes/composer-elements/message-box/message-box.php:9
+msgid "Message box"
+msgstr ""
+
+#: includes/composer-elements/message-box/message-box.php:20
+msgid "Here you can choose message box style."
+msgstr ""
+
+#: includes/composer-elements/message-box/message-box.php:39
+msgid "Here you can enter message box text description."
+msgstr ""
+
+#: includes/composer-elements/message-box/message-box.php:45
+msgid "Close button"
+msgstr ""
+
+#: includes/composer-elements/message-box/message-box.php:48
+msgid "Enable close button on hover"
+msgstr ""
+
+#: includes/composer-elements/message-box/message-box.php:65
+msgid "Text color"
+msgstr ""
+
+#: includes/composer-elements/message-box/message-box.php:77
+msgid "Background color"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:9
+msgid "Nivo slider"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:18
+msgid "Navigation style"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:40
+msgid "Here you can upload slide image."
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:50
+msgid "Here you can enter slide title."
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:58
+msgid "Custom title color"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:64
+msgid "Caption"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:67
+msgid "Here you can enter slide caption."
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:71
+msgid "Caption color"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:74
+msgid "Custom caption color"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:80
+msgid "Subtext"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:83
+msgid "Here you can enter slide subtext."
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:87
+msgid "Subtext color"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:90
+msgid "Custom subtext color"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:96
+msgid "Subtext link"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:99
+msgid "Here you can add link to subtext."
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:106
+msgid "Width"
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:109
+msgid "Here you can define slide images width."
+msgstr ""
+
+#: includes/composer-elements/nivo-slider/nivo-slider.php:117
+msgid "Here you can define slide images height."
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:9
+msgid "Pricing table"
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:20
+msgid "Here you can choose how to display pricing table."
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:34
+msgid "Here you can enter pricing table title."
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:41
+msgid "Price"
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:43
+#: includes/composer-elements/pricing-table/pricing-table.php:111
+msgid "{$2500} / project"
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:44
+msgid "Wrap price into { } . eg. {$8000} / project."
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:56
+msgid "Feature text"
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:77
+msgid "Button url"
+msgstr ""
+
+#: includes/composer-elements/pricing-table/pricing-table.php:86
+msgid "Button color"
+msgstr ""
+
+#: includes/composer-elements/raw-code/raw-code.php:9
+msgid "Raw code"
+msgstr ""
+
+#: includes/composer-elements/raw-code/raw-code.php:18
+msgid "Code"
+msgstr ""
+
+#: includes/composer-elements/raw-code/raw-code.php:21
+msgid "Here you can enter raw code."
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:9
+msgid "Services carousel"
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:21
+msgid "Here you can choose services style"
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:30
+#: includes/composer-elements/services-carousel/services-carousel.php:81
+msgid "Services"
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:33
+#: includes/composer-elements/services-carousel/services-carousel.php:84
+msgid "Here you can enter services."
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:45
+#: includes/composer-elements/services-carousel/services-carousel.php:104
+msgid "Custom icon color"
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:48
+#: includes/composer-elements/services-carousel/services-carousel.php:107
+msgid "Here you can change default icon color."
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:63
+#: includes/composer-elements/services-carousel/services-carousel.php:122
+msgid "Description"
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:66
+#: includes/composer-elements/services-carousel/services-carousel.php:125
+msgid "Here you can enter service description"
+msgstr ""
+
+#: includes/composer-elements/services-carousel/services-carousel.php:142
+msgid "Here you can enter button text"
+msgstr ""
+
+#: includes/composer-elements/single-image/single-image.php:10
+msgid "Single Image"
+msgstr ""
+
+#: includes/composer-elements/single-image/single-image.php:29
+msgid ""
+"Here you can define image size (width, height). You can enter only width to "
+"resize image or width and height to crop image ( Eg. 250, 250 )."
+msgstr ""
+
+#: includes/composer-elements/single-image/single-image.php:36
+msgid "Image link"
+msgstr ""
+
+#: includes/composer-elements/single-image/single-image.php:39
+msgid "Here you can add link to image"
+msgstr ""
+
+#: includes/composer-elements/single-image/single-image.php:45
+msgid "Image reveal"
+msgstr ""
+
+#: includes/composer-elements/single-image/single-image.php:47
+msgid "Select this if you want reveal image when user scrools to it."
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:9
+msgid "Social Photo Stream"
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:18
+msgid "Network"
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:20
+msgid "Select social network."
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:37
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:40
+msgid "Username / Channel"
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:45
+msgid "Limit"
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:48
+msgid "Number of images to fetch."
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:54
+msgid "Access token Key"
+msgstr ""
+
+#: includes/composer-elements/social-photo-stream/social-photo-stream.php:57
+msgid "Enter Access token key if required."
+msgstr ""
+
+#: includes/composer-elements/table/table.php:9
+#: includes/composer-elements/table/table.php:18
+msgid "Table"
+msgstr ""
+
+#: includes/composer-elements/table/table.php:21
+msgid ""
+"Here you can create table. All other content except table will be removed. You "
+"can have only one table per element."
+msgstr ""
+
+#: includes/composer-elements/table/table.php:26
+msgid "Table type"
+msgstr ""
+
+#: includes/composer-elements/tabs/tabs.php:9
+#: includes/composer-elements/tabs/tabs.php:61
+msgid "Consulting Press - Transparent"
+msgstr ""
+
+#: includes/composer-elements/tabs/tabs.php:10
+#: includes/composer-elements/tabs/tabs.php:62
+msgid "Consulting Press - Theme Color"
+msgstr ""
+
+#: includes/composer-elements/tabs/tabs.php:11
+#: includes/composer-elements/tabs/tabs.php:63
+msgid "Consulting Press - Dark Color"
+msgstr ""
+
+#: includes/composer-elements/team-member/team-member.php:9
+msgid "Team member"
+msgstr ""
+
+#: includes/composer-elements/team-member/team-member.php:28
+msgid "Team member title."
+msgstr ""
+
+#: includes/composer-elements/team-member/team-member.php:44
+msgid "Team member short biography."
+msgstr ""
+
+#: includes/composer-elements/team-member/team-member.php:59
+#: includes/composer-elements/team-member/team-member.php:82
+msgid "View profile"
+msgstr ""
+
+#: includes/composer-elements/team-member/team-member.php:60
+msgid "Here you can enter text that will apear on read more link."
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:9
+msgid "Single Testimonial"
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:21
+#: includes/composer-elements/testimonials/testimonials.php:21
+msgid "Here you can select testimonial style."
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:30
+#: includes/composer-elements/testimonials/testimonials.php:37
+msgid "Testimonial"
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:41
+#: includes/composer-elements/testimonials/testimonials.php:48
+msgid "Here you can enter testimonial author"
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:47
+#: includes/composer-elements/testimonials/testimonials.php:54
+msgid "Author link"
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:50
+#: includes/composer-elements/testimonials/testimonials.php:57
+msgid "Here you can enter link to author page."
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:55
+#: includes/composer-elements/testimonials/testimonials.php:62
+msgid "Author link text"
+msgstr ""
+
+#: includes/composer-elements/testimonial/testimonial.php:58
+#: includes/composer-elements/testimonials/testimonials.php:65
+msgid "Here you can enter text that will apear on link."
+msgstr ""
+
+#: includes/composer-elements/testimonials/testimonials.php:9
+msgid "Testimonials Carousel"
+msgstr ""
+
+#: includes/composer-elements/testimonials/testimonials.php:29
+msgid "Testimonials"
+msgstr ""
+
+#: includes/composer-elements/testimonials/testimonials.php:32
+msgid "Here you can enter testimonials."
+msgstr ""
+
+#: includes/composer-elements/testimonials/testimonials.php:40
+msgid "Here you can enter testimonial title"
+msgstr ""
+
+#: includes/composer-elements/testimonials/testimonials.php:72
+msgid "Testimonial color"
+msgstr ""
+
+#: includes/composer-elements/testimonials/testimonials.php:75
+#: includes/composer-elements/testimonials/testimonials.php:83
+msgid "Optional."
+msgstr ""
+
+#: includes/composer-elements/testimonials/testimonials.php:80
+msgid "Author color"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:43
+msgid "WordPress Importer"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:49
+msgid "Redux Framework"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:55
+msgid "Volcanno One Click Installer"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:63
+msgid "Volcanno Icon Font Parser (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:71
+msgid "Custom Post Types"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:78
+msgid "Meta Box"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:84
+msgid "Meta Box Tabs"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:91
+msgid "Meta Box Conditional Logic"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:98
+msgid "Visual Composer"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:105
+msgid "Volcanno Shortcodes"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:112
+msgid "TinyMCE Advanced"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:118
+msgid "Volcanno Breadcrumbs (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:126
+msgid "Contact Form 7 (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:132
+msgid "Max Mega Menu (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:138
+msgid "Events Manager (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:144
+msgid "Newsletter (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:150
+msgid "Master Slider (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:160
+msgid "SVG Support (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:166
+msgid "Recent Posts Widget Extended"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:172
+msgid "Envato Market (Optional)"
+msgstr ""
+
+#: includes/configuration/plugin-list.php:206
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/configuration/plugin-list.php:209
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/configuration/plugin-list.php:211
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/configuration/plugin-list.php:213
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/configuration/plugin-list.php:216
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:90
+msgid "Page Options"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:96
+#: includes/configuration/theme-options.php:499
+msgid "Page title"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:97
+#: includes/configuration/theme-options.php:547
+msgid "Blog"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:98
+#: includes/configuration/post-metabox.php:321
+msgid "Sidebar"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:99
+#: includes/configuration/theme-options.php:616
+msgid "Case Studies"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:110
+msgid "Disable page title"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:112
+msgid "Check this to Disable Page Title."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:120
+msgid "Here you can overide default page title."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:127
+msgid "Extra title"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:129
+msgid "Extra title will appear before page title. Excluding managment header style"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:137
+msgid "Background image."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:138
+#: includes/configuration/post-metabox.php:348
+msgid "Recomended minimum image size: 1920 x 480"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:146
+msgid "Header type"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:152
+msgid "Inherit from theme options"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:153
+msgid "Finance"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:154
+msgid "Tourism"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:155
+msgid "It Security"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:156
+msgid "Management"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:167
+#: includes/configuration/post-metabox.php:333
+msgid "Sidebar placement"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:168
+msgid "Page can have left or right sidebar."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:181
+msgid "Sidebar generator"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:182
+msgid ""
+"Choose between new sidebar generation or selecting sidebar. We recommend Custom "
+"Sidebars plugin in case you want to generate new sidebar and use it for set of "
+"pages."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:186
+msgid "Generate new sidebar"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:186
+msgid "Select existing sidebar"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:192
+msgid "Sidebar name"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:193
+msgid ""
+"Select sidebar you want to use on this page. If not set, Main Sidebar is used."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:208
+msgid "Blog style"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:209
+#: includes/configuration/post-metabox.php:259
+msgid "Choose between grid and list view."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:213
+#: includes/configuration/post-metabox.php:263
+msgid "Grid"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:213
+#: includes/configuration/post-metabox.php:263
+msgid "List"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:218
+#: includes/configuration/post-metabox.php:277
+msgid "Display posts"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:219
+#: includes/configuration/post-metabox.php:278
+msgid "Selected categories can't be used in more than one page template."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:225
+#: includes/configuration/post-metabox.php:284
+msgid "All available categories"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:226
+#: includes/configuration/post-metabox.php:285
+msgid "From category"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:232
+msgid "Select categories for blog posts"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:244
+#: includes/configuration/post-metabox.php:303
+#: includes/configuration/theme-options.php:602
+msgid "Pagination"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:246
+#: includes/configuration/post-metabox.php:305
+msgid "Number of items per page."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:258
+msgid "Case Studies style"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:268
+msgid "Category filter"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:270
+msgid "Check this to Enable category filter."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:291
+msgid "Select categories for case studies"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:316
+msgid "Single Post Options"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:322
+msgid "Here you can select if you want custom sidebar position."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:326
+msgid "Inherit"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:327
+msgid "Custom"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:334
+msgid "Here you can define sidebar placement for single case study."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:347
+msgid "Page title background image"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:355
+msgid "Featured image on single case study"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:357
+msgid "Check this to Disable featured image on single case study."
+msgstr ""
+
+#: includes/configuration/post-metabox.php:364
+msgid "Video url"
+msgstr ""
+
+#: includes/configuration/post-metabox.php:365
+msgid "Enter video url for post format."
+msgstr ""
+
+#: includes/configuration/theme-options.php:141
+msgid "ConsultingPress"
+msgstr ""
+
+#: includes/configuration/theme-options.php:157
+msgid "General"
+msgstr ""
+
+#: includes/configuration/theme-options.php:162
+msgid "Theme loader"
+msgstr ""
+
+#: includes/configuration/theme-options.php:163
+msgid "Enable or disable theme loading animation"
+msgstr ""
+
+#: includes/configuration/theme-options.php:164
+#: includes/configuration/theme-options.php:173
+#: includes/configuration/theme-options.php:182
+#: includes/configuration/theme-options.php:507
+#: includes/configuration/theme-options.php:713
+#: includes/configuration/theme-options.php:722
+#: includes/configuration/theme-options.php:743
+msgid "Enable"
+msgstr ""
+
+#: includes/configuration/theme-options.php:165
+#: includes/configuration/theme-options.php:174
+#: includes/configuration/theme-options.php:183
+#: includes/configuration/theme-options.php:508
+#: includes/configuration/theme-options.php:714
+#: includes/configuration/theme-options.php:723
+#: includes/configuration/theme-options.php:744
+msgid "Disable"
+msgstr ""
+
+#: includes/configuration/theme-options.php:171
+msgid "Scroll to top"
+msgstr ""
+
+#: includes/configuration/theme-options.php:172
+msgid "Enable or disable scrool to top."
+msgstr ""
+
+#: includes/configuration/theme-options.php:180
+msgid "Smooth scroll"
+msgstr ""
+
+#: includes/configuration/theme-options.php:181
+msgid "Enable or disable smooth scroll."
+msgstr ""
+
+#: includes/configuration/theme-options.php:190
+msgid "Theme color type"
+msgstr ""
+
+#: includes/configuration/theme-options.php:191
+msgid "Select predefined or custom color style type."
+msgstr ""
+
+#: includes/configuration/theme-options.php:201
+msgid "Theme color style"
+msgstr ""
+
+#: includes/configuration/theme-options.php:202
+msgid "Select one of predefined theme color styles."
+msgstr ""
+
+#: includes/configuration/theme-options.php:213
+msgid "Main Color"
+msgstr ""
+
+#: includes/configuration/theme-options.php:214
+msgid "Pick a main color for the theme."
+msgstr ""
+
+#: includes/configuration/theme-options.php:223
+msgid "Second hover Color"
+msgstr ""
+
+#: includes/configuration/theme-options.php:224
+msgid "Pick a second hover color for the theme."
+msgstr ""
+
+#: includes/configuration/theme-options.php:239
+msgid "Header"
+msgstr ""
+
+#: includes/configuration/theme-options.php:244
+msgid "Main Layout"
+msgstr ""
+
+#: includes/configuration/theme-options.php:245
+msgid "Select header type. ( Finance & Tourism, IT Security, Management )"
+msgstr ""
+
+#: includes/configuration/theme-options.php:269
+msgid "Logo"
+msgstr ""
+
+#: includes/configuration/theme-options.php:271
+msgid "Upload logo for your website."
+msgstr ""
+
+#: includes/configuration/theme-options.php:296
+msgid "Please insert text in format: title|text|url (url is optional)."
+msgstr ""
+
+#: includes/configuration/theme-options.php:306
+msgid "Call us|+00 41 258 9854"
+msgstr ""
+
+#: includes/configuration/theme-options.php:307
+msgid "Get in touch|info@consultingpress.com|mailto:info@consultingpress.com"
+msgstr ""
+
+#: includes/configuration/theme-options.php:308
+msgid "Our locations|Global coverage|http://www.consultingpress.com/contact/"
+msgstr ""
+
+#: includes/configuration/theme-options.php:315
+msgid "Social icons"
+msgstr ""
+
+#: includes/configuration/theme-options.php:316
+msgid "Here you can add your social networks."
+msgstr ""
+
+#: includes/configuration/theme-options.php:327
+msgid "Languages switcher"
+msgstr ""
+
+#: includes/configuration/theme-options.php:328
+msgid ""
+"Show or hide language switcher. ( Available only when WPML or Polylang plugins "
+"are active )."
+msgstr ""
+
+#: includes/configuration/theme-options.php:329
+#: includes/configuration/theme-options.php:595
+#: includes/configuration/theme-options.php:604
+#: includes/configuration/theme-options.php:684
+#: includes/configuration/theme-options.php:693
+msgid "Show"
+msgstr ""
+
+#: includes/configuration/theme-options.php:330
+#: includes/configuration/theme-options.php:596
+#: includes/configuration/theme-options.php:605
+#: includes/configuration/theme-options.php:685
+#: includes/configuration/theme-options.php:694
+msgid "Hide"
+msgstr ""
+
+#: includes/configuration/theme-options.php:336
+msgid "Search input placeholder text"
+msgstr ""
+
+#: includes/configuration/theme-options.php:337
+msgid "Text that will apear as a placeholder in search field."
+msgstr ""
+
+#: includes/configuration/theme-options.php:338 includes/volcanno-filters.php:909
+#: includes/volcanno-partials.php:204 searchform.php:6
+msgid "Type and hit enter..."
+msgstr ""
+
+#: includes/configuration/theme-options.php:348
+msgid "Typography"
+msgstr ""
+
+#: includes/configuration/theme-options.php:353
+msgid "Body Font"
+msgstr ""
+
+#: includes/configuration/theme-options.php:354
+#: includes/configuration/theme-options.php:388
+msgid "Specify the body font properties."
+msgstr ""
+
+#: includes/configuration/theme-options.php:370
+msgid "Paragraph Font"
+msgstr ""
+
+#: includes/configuration/theme-options.php:371
+msgid "Specify the paragraph font properties."
+msgstr ""
+
+#: includes/configuration/theme-options.php:387
+msgid "H1 Heading"
+msgstr ""
+
+#: includes/configuration/theme-options.php:404
+msgid "H2 Heading"
+msgstr ""
+
+#: includes/configuration/theme-options.php:405
+msgid "Specify the properties for H2."
+msgstr ""
+
+#: includes/configuration/theme-options.php:421
+msgid "H3 Heading"
+msgstr ""
+
+#: includes/configuration/theme-options.php:422
+msgid "Specify the properties for H3."
+msgstr ""
+
+#: includes/configuration/theme-options.php:438
+msgid "H4 Heading"
+msgstr ""
+
+#: includes/configuration/theme-options.php:439
+msgid "Specify the properties for H4."
+msgstr ""
+
+#: includes/configuration/theme-options.php:455
+msgid "H5 Heading"
+msgstr ""
+
+#: includes/configuration/theme-options.php:456
+msgid "Specify the properties for H5."
+msgstr ""
+
+#: includes/configuration/theme-options.php:472
+msgid "H6 Heading"
+msgstr ""
+
+#: includes/configuration/theme-options.php:473
+msgid "Specify the properties for H6."
+msgstr ""
+
+#: includes/configuration/theme-options.php:505
+msgid "Breadcrumbs"
+msgstr ""
+
+#: includes/configuration/theme-options.php:506
+msgid "Enable or disable page title breadcrumbs."
+msgstr ""
+
+#: includes/configuration/theme-options.php:514
+msgid "Breadcrumbs prefix text"
+msgstr ""
+
+#: includes/configuration/theme-options.php:515
+msgid "Text that will appear before breadcrumbs."
+msgstr ""
+
+#: includes/configuration/theme-options.php:522
+msgid "Breadcrumbs Text"
+msgstr ""
+
+#: includes/configuration/theme-options.php:523
+msgid "Show navigation label instead page/post title."
+msgstr ""
+
+#: includes/configuration/theme-options.php:530
+msgid "Breadcrumbs Length"
+msgstr ""
+
+#: includes/configuration/theme-options.php:531
+msgid "Breadcrumbs will be cut to number of characters entered here."
+msgstr ""
+
+#: includes/configuration/theme-options.php:553
+msgid "Default Blog style"
+msgstr ""
+
+#: includes/configuration/theme-options.php:554
+msgid "Here you can choose default blog style."
+msgstr ""
+
+#: includes/configuration/theme-options.php:565
+#: includes/configuration/theme-options.php:640
+msgid "Default sidebar position"
+msgstr ""
+
+#: includes/configuration/theme-options.php:566
+msgid "Here you can select default sidebar position."
+msgstr ""
+
+#: includes/configuration/theme-options.php:576
+msgid "How many posts to display by default"
+msgstr ""
+
+#: includes/configuration/theme-options.php:577
+msgid "You can overide this for every blog template."
+msgstr ""
+
+#: includes/configuration/theme-options.php:587
+msgid "Single page"
+msgstr ""
+
+#: includes/configuration/theme-options.php:593
+msgid "Author description"
+msgstr ""
+
+#: includes/configuration/theme-options.php:594
+msgid "Show or hide author description at the end of the post."
+msgstr ""
+
+#: includes/configuration/theme-options.php:594
+msgid "Visible only if user have biographical info in user profile page."
+msgstr ""
+
+#: includes/configuration/theme-options.php:603
+msgid "Show or hide pagination at the end of the post."
+msgstr ""
+
+#: includes/configuration/theme-options.php:621
+msgid "Categories"
+msgstr ""
+
+#: includes/configuration/theme-options.php:628
+msgid "Default Case studies style"
+msgstr ""
+
+#: includes/configuration/theme-options.php:629
+msgid "Here you can choose default Case studies style."
+msgstr ""
+
+#: includes/configuration/theme-options.php:641
+msgid "Here you can select default sidebar position for case studies."
+msgstr ""
+
+#: includes/configuration/theme-options.php:651
+msgid "How many case studies to display by default"
+msgstr ""
+
+#: includes/configuration/theme-options.php:652
+msgid "You can overide this for every Case studies template."
+msgstr ""
+
+#: includes/configuration/theme-options.php:665
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/configuration/theme-options.php:671
+msgid "Sidebar position"
+msgstr ""
+
+#: includes/configuration/theme-options.php:672
+msgid "Here you can select shop sidebar position."
+msgstr ""
+
+#: includes/configuration/theme-options.php:682
+msgid "Shopping Cart"
+msgstr ""
+
+#: includes/configuration/theme-options.php:683
+msgid "Show or hide shopping cart."
+msgstr ""
+
+#: includes/configuration/theme-options.php:691
+msgid "Shopping Cart Amount"
+msgstr ""
+
+#: includes/configuration/theme-options.php:692
+msgid "Show or hide shopping cart amount."
+msgstr ""
+
+#: includes/configuration/theme-options.php:706
+msgid "Footer"
+msgstr ""
+
+#: includes/configuration/theme-options.php:711
+msgid "Top widget section"
+msgstr ""
+
+#: includes/configuration/theme-options.php:712
+msgid "Enable or disable footer top widget section"
+msgstr ""
+
+#: includes/configuration/theme-options.php:720
+msgid "Main widget sections"
+msgstr ""
+
+#: includes/configuration/theme-options.php:721
+msgid "Enable or disable footer main widget section"
+msgstr ""
+
+#: includes/configuration/theme-options.php:729
+msgid "Number of main footer sections"
+msgstr ""
+
+#: includes/configuration/theme-options.php:730
+msgid "For each section is created new widget sidebar."
+msgstr ""
+
+#: includes/configuration/theme-options.php:741
+msgid "Copyright section"
+msgstr ""
+
+#: includes/configuration/theme-options.php:742
+msgid "Enable or disable footer copyright section."
+msgstr ""
+
+#: includes/configuration/theme-options.php:750
+msgid "Left Copyright text"
+msgstr ""
+
+#: includes/configuration/theme-options.php:751
+msgid "Text that will apear in copyright on left side."
+msgstr ""
+
+#: includes/configuration/theme-options.php:752
+#: template-parts/footer-copyright.php:5
+msgid "Copyright © 2017 Consulting Press"
+msgstr ""
+
+#: includes/configuration/theme-options.php:758
+msgid "Right Copyright text"
+msgstr ""
+
+#: includes/configuration/theme-options.php:759
+msgid "Text that will apear in copyright on right side."
+msgstr ""
+
+#: includes/configuration/theme-options.php:771
+msgid "404 Page"
+msgstr ""
+
+#: includes/configuration/theme-options.php:776
+msgid "Page title image"
+msgstr ""
+
+#: includes/configuration/theme-options.php:777
+msgid "Here you can upload page title background image."
+msgstr ""
+
+#: includes/configuration/theme-options.php:782
+msgid "Top Heading"
+msgstr ""
+
+#: includes/configuration/theme-options.php:783
+msgid "Top Heading for 404 page."
+msgstr ""
+
+#: includes/configuration/theme-options.php:784 template-parts/page-title.php:67
+msgid "404 - Page not found"
+msgstr ""
+
+#: includes/configuration/theme-options.php:789
+msgid "Message"
+msgstr ""
+
+#: includes/configuration/theme-options.php:790
+msgid "Message for 404 page."
+msgstr ""
+
+#: includes/volcanno-actions.php:163
+msgid "—"
+msgstr ""
+
+#: includes/volcanno-enqueue.php:90
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/volcanno-filters.php:178
+msgid "Parent"
+msgstr ""
+
+#: includes/volcanno-filters.php:193 includes/volcanno-partials.php:137
+msgid "View your shopping cart"
+msgstr ""
+
+#: includes/volcanno-filters.php:720 includes/volcanno-filters.php:723
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: includes/volcanno-filters.php:849 includes/widgets/widget-key-contacts.php:165
+msgid "Name:"
+msgstr ""
+
+#: includes/volcanno-filters.php:852 includes/widgets/widget-contact-info.php:193
+msgid "E-Mail:"
+msgstr ""
+
+#: includes/volcanno-filters.php:857
+msgid "Comment:"
+msgstr ""
+
+#: includes/volcanno-filters.php:860
+msgid "Required fields are marked "
+msgstr ""
+
+#: includes/volcanno-filters.php:861
+msgid "Cancel reply"
+msgstr ""
+
+#: includes/volcanno-filters.php:862
+msgid "Leave a comment"
+msgstr ""
+
+#: includes/volcanno-filters.php:864
+msgid "Post Comment"
+msgstr ""
+
+#: includes/volcanno-filters.php:912
+msgid "Search"
+msgstr ""
+
+#: includes/volcanno-partials.php:215
+msgid "Toggle navigation"
+msgstr ""
+
+#: includes/volcanno-partials.php:448
+msgid "Pingback"
+msgstr ""
+
+#: includes/volcanno-partials.php:448
+msgid "Edit"
+msgstr ""
+
+#: includes/volcanno-partials.php:473
+msgid "Reply"
+msgstr ""
+
+#: includes/volcanno-partials.php:493
+msgid "Tags: "
+msgstr ""
+
+#: includes/volcanno-partials.php:520
+msgid "Categories: "
+msgstr ""
+
+#: includes/volcanno-sidebars.php:15
+msgid "Blog Sidebar"
+msgstr ""
+
+#: includes/volcanno-sidebars.php:33
+msgid "Events Sidebar"
+msgstr ""
+
+#: includes/volcanno-sidebars.php:53
+msgid "Shop Sidebar"
+msgstr ""
+
+#: includes/volcanno-sidebars.php:77
+msgid "Footer Sidebar "
+msgstr ""
+
+#: includes/volcanno-sidebars.php:96
+msgid "Footer Top sidebar"
+msgstr ""
+
+#: includes/volcanno-sidebars.php:142 includes/volcanno-sidebars.php:158
+msgid "An optional widget area for page "
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:34
+msgid "A widget that displays contact information."
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:39
+msgid "Contact Info"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:150
+#: includes/widgets/widget-feature-box.php:114
+#: includes/widgets/widget-key-contacts.php:153
+#: includes/widgets/widget-testimonial-carousel.php:140
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:156
+msgid "Before:"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:162
+msgid ""
+"Address Icon (<a href=\"https://fortawesome.github.io/Font-Awesome/cheatsheet/\" "
+"target=\"_BLANK\">Font Awesome</a>):"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:169
+msgid "Address:"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:175
+msgid ""
+"Phone Icon (<a href=\"https://fortawesome.github.io/Font-Awesome/cheatsheet/\" "
+"target=\"_BLANK\">Font Awesome</a>):"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:181
+msgid "Phone:"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:187
+msgid ""
+"E-mail Icon (<a href=\"https://fortawesome.github.io/Font-Awesome/cheatsheet/\" "
+"target=\"_BLANK\">Font Awesome</a>):"
+msgstr ""
+
+#: includes/widgets/widget-contact-info.php:199
+msgid "After:"
+msgstr ""
+
+#: includes/widgets/widget-feature-box.php:33
+msgid "Widget that displays feature box."
+msgstr ""
+
+#: includes/widgets/widget-feature-box.php:120
+msgid "Icon:"
+msgstr ""
+
+#: includes/widgets/widget-feature-box.php:122
+msgid "Font classes list can be found in Documentation directory."
+msgstr ""
+
+#: includes/widgets/widget-feature-box.php:127
+#: includes/widgets/widget-testimonial-carousel.php:146
+msgid "Content:"
+msgstr ""
+
+#: includes/widgets/widget-feature-box.php:134
+msgid "Url:"
+msgstr ""
+
+#: includes/widgets/widget-feature-box.php:140
+msgid "Button Text:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:34
+msgid "Widget that displays key contacts."
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:39
+msgid "Key contact"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:138
+msgid "Joshua Turner"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:139
+msgid "Management Consultant"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:140
+msgid "lynny-phone-1"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:141
+msgid "+00 385 01 258 7856"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:143
+msgid "lynny-mail-duplicate"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:144
+msgid "joshua@consulting.com"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:159
+msgid "Image ID:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:171
+msgid "Position:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:177
+msgid "First info icon:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:183
+msgid "First info text:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:189
+msgid "First info url:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:195
+msgid "Second info icon:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:201
+msgid "Second info text:"
+msgstr ""
+
+#: includes/widgets/widget-key-contacts.php:207
+msgid "Second info url:"
+msgstr ""
+
+#: includes/widgets/widget-testimonial-carousel.php:34
+msgid "Widget that displays testimonial carousel."
+msgstr ""
+
+#: includes/widgets/widget-testimonial-carousel.php:39
+msgid "Testimonial Carousel"
+msgstr ""
+
+#: includes/widgets/widget-testimonial-carousel.php:148
+msgid ""
+"Each testimonial enter in format [text=\"Sample text\" author=\"Sample author\"]"
+msgstr ""
+
+#: template-parts/footer-copyright.php:6
+msgid "Design and development by "
+msgstr ""
+
+#: template-parts/footer-copyright.php:6
+msgid "Pixel Industry"
+msgstr ""
+
+#: template-parts/page-filters.php:24
+msgid "All"
+msgstr ""
+
+#: template-parts/page-title.php:9
+msgid "Archive "
+msgstr ""
+
+#: template-parts/page-title.php:11 template-parts/page-title.php:13
+#: template-parts/page-title.php:15
+msgid "for "
+msgstr ""
+
+#: template-parts/page-title.php:11
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: template-parts/page-title.php:13
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: template-parts/page-title.php:20
+msgid "Tag archive for "
+msgstr ""
+
+#: template-parts/page-title.php:25
+msgid "Search results for "
+msgstr ""
+
+#: template-parts/page-title.php:40
+msgid "Tag"
+msgstr ""
+
+#: template-parts/page-title.php:57
+msgid "Author Archive for "
+msgstr ""
+
+#: template-parts/post-pagination.php:13
+msgid "Back to news"
+msgstr ""
+
+#: template-parts/post-pagination.php:14
+msgid "No prev posts"
+msgstr ""
+
+#: template-parts/post-pagination.php:15
+msgid "No next posts"
+msgstr ""
+
+#: template-parts/post-pagination.php:24
+msgid "Back to case studies"
+msgstr ""
+
+#: template-parts/post-pagination.php:25
+msgid "No prev case study"
+msgstr ""
+
+#: template-parts/post-pagination.php:26
+msgid "No next case study"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:33
+#, php-format
+msgid "%s review for %s%s%s"
+msgid_plural "%s reviews for %s%s%s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:35
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:56
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:69
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:69
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:70
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:74
+msgid "Your name..."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:76
+msgid "Email..."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:84
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:88
+msgid "Your Rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:89
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:91
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:92
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:93
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:94
+msgid "Very Poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:98
+msgid "Your Review..."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:107
+msgid "Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: includes/assets/tinymce/tinymce/tinymce.min.js:8
+msgid "align"
+msgstr ""
+
+#: includes/assets/tinymce/tinymce/tinymce.min.js:8
+msgid "blockquote"
+msgstr ""
+
+#: includes/assets/tinymce/tinymce/tinymce.min.js:8
+msgid "p"
+msgstr ""

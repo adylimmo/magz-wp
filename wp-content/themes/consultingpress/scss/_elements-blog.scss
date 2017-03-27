@@ -1,0 +1,589 @@
+/*  
+    6.4. ELEMENTS - BLOG
+    ========================================================================= */ 
+.post-body {
+    > ul, > ol {
+        margin-bottom: 2em;
+    }
+    .gallery{
+        margin-bottom: 40px !important;
+    }
+    .wp-audio-shortcode{
+        margin-bottom: 40px;
+    }
+}
+.post-tags, .post-categories {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    float: left;
+
+    li {
+        float: left;
+        padding-right: 5px;
+
+        a {
+            color: $mc-regular;
+            font-weight: $font-weight-normal;
+        }
+    }
+}
+.post-tags, .post-categories, .page-links{
+    width: 100%;
+}
+.single-post {
+    .page-content {
+        .row {
+            margin-bottom: 120px;
+        }
+    }
+}
+.date + .post-tags{
+    margin-top: 2em;
+}
+.blog-posts {
+    .post-container {
+        list-style-type: none;
+    }
+    &.blog-grid {
+        .post-container {
+            list-style: none;
+            float: left;
+            width: 30%;
+            margin-right: 30px;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        .post-media {
+            margin-bottom: 20px;
+
+            a {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .post-body {
+
+            .date {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+                letter-spacing: $letter-spacing-large;
+                color: $mc-light;
+            }
+
+            a {
+                width: 100%;
+
+                &.read-more {
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+
+            h3 {
+                font-size: 21px;
+                margin-bottom: 20px;
+            }
+        }
+
+        > li:nth-child(3n + 1) {
+            clear: both;
+        }
+        > li.sticky {
+            padding-bottom: 20px;
+        }
+    }
+
+    .pagination{
+        width: 100%;
+        text-align: left;
+        > ul {
+            padding-left: 0;
+            display: inline-block;
+        }
+    }
+    .pagination.pagination-centered {
+        float: none;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .pagination.pagination-right {
+        float: none;
+        text-align: right;
+    }
+    .sticky {
+        border-bottom: 8px solid #e0e0e0;
+        background-color: #f4f4f4;
+        padding: 30px;
+    }
+    &.blog-list {
+        > li {
+            list-style: none;
+            margin-bottom: 50px;
+            clear: both;
+
+            .post-media {
+                width: 360px;
+                float: left;
+            }
+
+            .post-body {
+                padding-left: 390px;
+
+                h2, h3, h4, h5, h6 {
+                    font-size: 21px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                }
+
+                .date {
+                    display: block;
+                    width: 100%;
+                    font-weight: $font-weight-normal;
+                    color: $mc-light;
+                    letter-spacing: $letter-spacing-large;
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                }
+                &.no-post-image {
+                    padding-left: 0;
+                }
+            }
+            &.sticky {
+                padding-bottom: 20px;
+            }
+            &.post-container {
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+            &.pagination {
+                margin-top: 50px;
+            }
+        }
+
+    }
+}
+
+
+/*  6.4.1. BLOG SEARCH
+    ------------------------------------------------------------------------- */ 
+
+.widget_search {
+    form {
+        position: relative;
+        width: 100%; 
+    }
+
+    @include placeholder {
+        color: $mc-light;
+        font-size: 13px;
+    };
+}
+
+.a_search {
+    display: block;
+    width: 100%;
+
+    padding-bottom: 10px;
+
+    border-top: none;
+    border-right: none;  
+    border-bottom: 1px solid #eee;
+    border-left: none;
+}
+
+.search-submit {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    min-height: 40px;
+    width: 40px;
+    border: none;
+
+    text-indent: -9999px;
+
+    background-color: transparent;
+    background-image: url("img/svg/search-dark.svg");
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-widget-container{
+    .widget_search{
+        form {
+
+            > .a_search {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+
+/*  6.4.2. BLOG SINGLE
+    ------------------------------------------------------------------------- */ 
+
+.blog-posts.blog-single {
+    > li.post-container {
+        list-style: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+        padding: 0;
+
+        .post-body {
+
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        > .blog-single-author {
+            margin-top: 65px;
+            float: left;
+            > .avatar-container{
+                float: left;
+                width: 85px;
+                height: 85px;
+                overflow: hidden;
+                position: relative;
+                @include border-radius(50%);
+            }
+
+            > .text-container {
+                margin-left: 110px;
+
+                h3 {
+                    margin-bottom: 20px;
+                    font-size: 18px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                }
+            }
+        } 
+    }
+}
+
+
+/*  6.4.3. BLOG SINGLE COMMENTS
+    ------------------------------------------------------------------------- */ 
+
+.post-comments {
+    float: left;
+    width: 100%;
+    margin-top: 65px;
+
+    > h3 {
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        font-size: 18px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+
+    > ul.comments-li {
+        padding-left: 0;
+        float: left;
+        width: 100%;
+        .comment-respond {
+            margin-top: 60px;
+            margin-bottom: 40px;
+
+            &:after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        }
+
+        > li {
+            float: left;
+            list-style: none;
+            width: 100%;
+            min-height: 85px;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .comment {
+                & + .children {
+                    margin-top: 30px;
+
+                    .comment-respond {
+                        margin-bottom: 60px;
+                    }
+                }
+
+                width: 100%;
+                min-height: 85px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #eee;
+
+                .avatar-container {
+                    float: left;
+                    width: 85px;
+                    height: 85px;
+                    margin-right: 30px;
+                    overflow: hidden;
+                    position: relative;
+                    @include border-radius(50%);
+                }
+
+                .comment-meta {
+                    margin-bottom: 20px;
+                    padding-left: 110px;
+
+                    > li {
+                        list-style: none;
+
+                        a {
+                            font-size: 18px;
+                            color: $mc-dark;
+                        }
+                    }
+
+                    .date {
+                        font-size: 13px;
+                    }
+                }
+
+                .comment-body {
+                    padding-left: 115px;
+
+                    .comment-reply-link {
+                        position: relative;
+                        padding-right: 15px;
+
+                        &::after {
+                            position: absolute;
+                            display: block;
+                            content: "\f078";
+                            font-family: "FontAwesome";
+                            font-size: 6px;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+
+            &:last-child:not(:only-child) {
+                .comment {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .children {
+        margin-left: 10%;
+        float: left;
+        padding: 0 0 0 20px;
+        width: calc(90%);
+
+        li {
+            list-style: none;
+        }
+        > li{
+            margin-bottom:30px;
+            p:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+    }
+}
+.comment-reply-title {
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.comment-form-container {
+    margin-top: 60px;
+}
+.comment-form-container,
+.comment-form{
+    width: 100%;
+    float: left;
+
+    fieldset {
+        margin: 0 0 15px 0;
+    }
+    .reguired-fields {
+        display: none;
+    }
+    .comment-input-container{
+        display: block;
+        width: 100%;
+
+        textarea,
+        input{
+            width: 100%;
+            border: 1px solid #e3e3e3;
+            padding: 10px 15px;
+            resize: none;
+
+            &:focus {
+                border-color: #d3d3d3;
+            }
+        }
+
+        @include placeholder{
+            color: $mc-light;
+        }
+    }
+
+    .form-submit {
+        padding-bottom: 0;
+
+        #comment-reply {
+            padding: 15px 30px;
+            border: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 15px;
+            margin-top: 15px;
+            letter-spacing: $letter-spacing-regular;
+            font-weight: $font-weight-medium;
+            color: #fff;
+
+            @include transition($default-transition);
+        }
+    }
+}
+
+
+/*  6.4.4. BLOG AND PORTFOLIO NAVIGATION
+    ------------------------------------------------------------------------- */ 
+
+.portfolio-blog-nav-simple {
+    text-align: center;
+    border-top: 1px solid #eee;
+
+    p {
+        padding-top: 30px;
+        text-transform: uppercase;
+        font-weight: $font-weight-medium;
+        font-size: 13px;
+
+        > a {
+            position: relative;
+            color: $mc-dark;
+
+            &.nav-next {
+                padding-right: 20px;
+
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: "\f061";
+                    font-family: "FontAwesome";
+                    font-size: 10px;
+                    top: -3px;
+                    right: 0px;
+                }
+            }
+
+            &.nav-prev {
+                padding-left: 20px;
+
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: "\f060";
+                    font-family: "FontAwesome";
+                    font-size: 10px;
+                    top: -3px;
+                    left: 0px;
+                }
+            }
+        }
+
+        &.no-posts {
+            color: $mc-light;
+        }
+    }
+}
+
+
+/*  6.4.5. BLOG PAGES BACKGROUND
+    ------------------------------------------------------------------------- */ 
+[class*="posts-bkg"] {
+    @include bkg-img-styles();    
+}
+
+.posts-bkg-01 {
+    background-image: url("img/blog/consultingpress-preserving-cultural-heritage-with-sustainable-tourism.jpg");
+}
+
+.posts-bkg-02 {
+    background-image: url("img/blog/consultingpress-launches-new-tourism-development-project.jpg");
+}
+
+.posts-bkg-03 {
+    background-image: url("img/blog/10-good-reasons-to-visit-croatian-coast-this-summer-consultingpress.jpg");
+}
+
+.posts-bkg-04 {
+    background-image: url("img/blog/consultingpress-cultural-tourism-increasing-value-of-destination.jpg");
+}
+
+.posts-bkg-05 {
+    background-image: url("img/blog/consultingpress-role-of-sustainable-tourism-in-nature-conservation.jpg");
+}
+
+.posts-bkg-06 {
+    background-image: url("img/blog/consultingpress-how-to-improve-your-tourism-marketing-strategies.jpg");
+}
+
+.posts-bkg-07 {
+    background-image: url("img/blog/value-of-sustainable-tourism-development.jpg");
+}
+
+.posts-bkg-08 {
+    background-image: url("img/blog/consultingpress-tourism-destination-marketing.jpg");
+}
+
+.posts-bkg-09 {
+    background-image: url("img/blog/consultingpress-delivering-quality-over-quantity.jpg");
+}
+
+.posts-bkg-10 {
+    background-image: url("img/blog/consultingpress-increase-company-value-by-investing-in-people.jpg");
+}
+
+.posts-bkg-11 {
+    background-image: url("img/blog/consultingpress-developing-future-logistics-leaders-in-europe.jpg");
+}
+
+.posts-bkg-12 {
+    background-image: url("img/blog/consultingpress-guidelines-for-a-high-impact-business-strategy.jpg");
+}
+
+.posts-bkg-13 {
+    background-image: url("img/blog/consultingpress-tourism-destination-marketing.jpg");
+}
+
+.posts-bkg-14 {
+    background-image: url("img/blog/consultingpress-management-consulting-mergers-and-acquisition.jpg");
+}
+
+.posts-bkg-15 {
+    background-image: url("img/blog/consultingpress-digital-marketing.jpg");
+}

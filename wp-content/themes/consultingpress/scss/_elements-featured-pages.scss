@@ -1,0 +1,59 @@
+/*  
+    6.14. ELEMENTS - FEATURED PAGES
+    ========================================================================= */
+
+.featured-page-box {
+    position: relative;
+    z-index: 100;
+    
+    .media {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    > .body {
+        position: relative;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eee;
+
+        h2, h3, h4, h5, h6 {
+            position: relative;
+            font-size: 15px;
+            line-height: 23px;
+            margin-bottom: 0;
+            padding-left: 20px;
+            
+            &:hover {
+                color: $mc-dark;
+            }
+            
+            &::before {
+                display: block;
+                position: absolute;
+                content: "\f061";
+                font-family: "FontAwesome";
+                font-size: 10px;
+                left: 0;
+                top: -2px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 70px;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+
+            @include transform-origin(left top);
+            @include transform(scale(0, 1));
+            @include transition(transform 0.4s cubic-bezier(1, 0, 0, 1));
+        }
+    }
+
+    &:hover .body::before {
+        @include transform(scale(1,1));  
+    }
+}

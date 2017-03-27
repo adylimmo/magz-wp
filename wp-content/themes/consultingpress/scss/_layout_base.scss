@@ -1,0 +1,514 @@
+/* =============================================================================
+    3. BASIC LAYOUT STYLES
+    ========================================================================= */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #020919;
+    z-index: 10000;
+
+    > #loading-status {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+
+        width: 80px;
+        height: 80px;
+
+        margin-top: -50px;
+        margin-left: -50px;
+
+        border: 3px solid transparent;
+        border-top-color: #e21f2f;
+
+        @include border-radius(50%);
+        @include animation-name(rotate);
+        @include duration(2.5s);
+        @include count(infinite);
+
+        @include keyframes(rotate){
+            0% {
+                @include transform(rotate(0deg));
+            }
+
+            100% {
+                @include transform(rotate(360deg));
+            }
+        };
+
+        &::before,
+        &::after{
+            position: absolute;
+            display: block;
+            content: "";
+            border: 3px solid transparent;
+
+            @include border-radius(50%);
+            @include animation-name(rotate);
+            @include duration(3s);
+            @include count(infinite);
+
+            @include keyframes(rotate){
+                0% {
+                    @include transform(rotate(0deg));
+                }
+
+                100% {
+                    @include transform(rotate(360deg));
+                }
+            };
+        }
+
+        &::before {
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+            border-bottom-color: #0bb4ce;
+        }
+
+        &::after {
+            @include duration(2.5s);
+
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+            border-top-color: #6ec25b;
+        }
+    }
+}
+
+/*  
+    3.1. PAGE CONTENT
+    ========================================================================= */ 
+
+.page-content { 
+    position: relative;
+
+    &.dark {
+        h1, h2, h3, h4, h5, h6 {
+            color: #fff;
+        }
+
+        a, p, span, li {
+            color: $mc-extra-light;
+        }
+    }
+    .content-wrapper {
+        margin-bottom: 0 !important;
+
+        p{
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+        >*:not(.vc_row){
+            &:last-child {
+                margin-bottom: 120px;
+            }
+        }
+        >*:not(.vc_row-full-width){
+            &:last-child {
+                margin-bottom: 120px;
+            }
+        }
+        > .vc_row-full-width{
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .row {
+        margin-bottom: 0;
+
+        div[class^="col-md-"] .cma-wysiwyg-editor {
+            overflow: hidden;
+        }
+
+        &.row-equal-height {
+            margin-bottom: 0;
+
+            .custom-col-padding {
+                padding-top: 120px;
+                padding-bottom: 120px;
+            }
+        }
+
+        &.custom-background {
+            padding: 40px;
+        }
+    }
+
+    &.custom-background {
+        padding: 150px 0;
+
+        .row {
+
+            &:only-child,
+                &:last-child{
+                margin-bottom: 0;                
+            }
+        }
+
+        &.padding-small {
+            padding: 50px 0;
+        }
+    }
+
+    .page-content-mask {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#051b44+0,051b44+50,051b44+100&1+0,0.5+50,0.8+100 */
+        background: -moz-linear-gradient(top,  rgba(5,27,68,1) 0%, rgba(5,27,68,0.5) 50%, rgba(5,27,68,0.8) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(5,27,68,1) 0%,rgba(5,27,68,0.5) 50%,rgba(5,27,68,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(5,27,68,1) 0%,rgba(5,27,68,0.5) 50%,rgba(5,27,68,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#051b44', endColorstr='#cc051b44',GradientType=0 ); /* IE6-9 */
+
+        &.mask-solid-color {
+            background: none;
+            background-color: rgba(3, 13, 38, 0.6);
+        }
+    }
+}
+.no-vc, .page-template-blog {
+    .page-content {
+        .row {
+            margin-bottom: 120px;
+        }
+    }
+}
+.no-vc {
+    .page-content .content-wrapper {
+        >*:last-child{
+            margin-bottom: 0;
+        } 
+    }
+}
+.bkg-color-white-shadow {
+    background-color: white;
+    border: 1px solid #eee;
+    @include box-shadow(0, 1px, 8px, #eee);
+}
+
+/*  3.1.1. PAGE CONTENT BACKGROUNDS
+    ------------------------------------------------------------------------- */
+
+.background-white-transparent {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bkg-color-white {
+    background-color: #fff;
+}
+
+.bkg-color-dark {
+    background-color: #09142d;
+}
+
+.bkg-color-light-grey {
+    background-color: #eff3f7;
+}
+/*  
+    3.2. HELPERS - PADDINGS AND MARGINS, CENTERING TEXT...
+    ========================================================================= */ 
+
+*[class^="row"] *[class^="row"]:last-child {
+    margin-bottom: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-80 {
+    margin-bottom: 80px !important;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.negative-top {
+    margin-top: -80px;
+}
+
+.pt-120 {
+    padding-top: 120px;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+/*  
+    3.3. PAGE TITLES
+    ========================================================================= */ 
+.page-title {
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .pt-image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        img {
+            height: auto;
+            min-height: 100%;
+            width: auto;
+            max-width: none;
+            position: absolute;
+        }
+    }
+}
+
+// IE FIX
+_::selection,.page-title {
+    display: block\0;
+}
+
+.pt-mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#051b44+0,051b44+50,051b44+100&1+0,0.5+50,0.8+100 */
+    background: -moz-linear-gradient(top,  rgba(5,27,68,1) 0%, rgba(5,27,68,0.5) 50%, rgba(5,27,68,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(5,27,68,1) 0%,rgba(5,27,68,0.5) 50%,rgba(5,27,68,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(5,27,68,1) 0%,rgba(5,27,68,0.5) 50%,rgba(5,27,68,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#051b44', endColorstr='#cc051b44',GradientType=0 ); /* IE6-9 */
+
+    &.mask-solid-color {
+        background: none;
+        background-color: rgba(3, 13, 38, 0.6);
+    }
+}
+
+.pt-mask-light {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.7+1,0.3+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 1%, rgba(255,255,255,0.3) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 1%,rgba(255,255,255,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.7) 1%,rgba(255,255,255,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#4dffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.page-title-style-01 {
+    position: relative;
+    padding-bottom: 80px;
+    margin-bottom: 120px;
+
+    &.centered {
+        .pt-heading {
+            > h1,
+            > span {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    &.left-aligned {
+        .pt-heading {
+            > h1,
+            > span {
+                text-align: left;
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .breadcrumb {
+            display: block;
+        }
+    }
+
+    .pt-heading {
+        width: 100%;
+        display: block;
+
+        span {
+            margin-bottom: 30px;
+            color: $mc-extra-light;
+            text-transform: uppercase;
+            letter-spacing: $letter-spacing-large;
+        }
+
+        h1 {
+            color: #fff;
+        }
+    }
+}
+
+.page-title-style-02 {
+    position: relative;
+    padding: 80px 0;
+    margin-bottom: 120px;
+
+    .pt-heading {
+        h1 {
+            margin-bottom: 0;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}
+
+.page-title-style-03 {
+    background-color: #eff3f7;
+    margin-bottom: 80px;
+    padding: 15px 0;
+
+    .breadcrumb {
+        display: block;
+
+        > li {
+            padding-bottom: 0;
+            color: $mc-regular;
+
+            > a {
+                color: $mc-light;
+            }
+        }
+    }
+}
+
+
+
+/*  
+    3.4. BREADCRUMBS
+    ========================================================================= */ 
+.breadcrumb {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+
+    > li,
+    > li > span,
+    > li > a{
+        font-weight: $font-weight-medium;
+        font-size: 13px;
+        line-height: 23px;
+        color: $mc-extra-light;
+    }
+
+    li {
+
+        &+ li::before {
+            position: relative;        
+            top: -2px;
+            color: $mc-extra-light;
+            content: "\f054";
+            font-family: "FontAwesome";
+            font-size: 6px;
+        }
+
+        &:nth-child(2)::before {
+            color: transparent;
+        }
+    }
+
+    > li > span.active {
+        color: #fff;
+    }
+}
+
+.page-title-style-02 {
+    .breadcrumb {
+        padding-top: 10px;
+        float: right;
+
+        > li,
+        > li > span,
+        > li > a {
+            color: $mc-dark;
+        }
+
+        li {
+            &+ li::before {
+                color: $mc-dark;
+            }
+        }
+
+        > li > span.active {
+            color: $mc-dark;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/*  
+    3.5. SIDEBAR
+    ========================================================================= */  
+.aside-right {
+    padding-left: 30px;
+}
+
+.aside-left {
+    padding-right: 30px;
+}
+
+
+.grid-presentation [class^="col-"]{
+    border: 1px solid #eee;
+    padding: 60px;
+}
+
+.grid-presentation .row:first-child [class^="col-"] {
+    border: none;
+    padding: 0;
+}

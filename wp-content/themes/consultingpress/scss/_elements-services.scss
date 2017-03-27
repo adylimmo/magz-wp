@@ -1,0 +1,172 @@
+/*  
+    6.27. ELEMENTS - SERVICES
+    ========================================================================= */
+
+.service-box {
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 20px;
+    }
+
+    i {
+        font-size: 30px;
+        color: $mc-light;
+    }
+
+    &.service-box-01 {
+        padding: 40px;
+        background-color: #fff;
+        border: 1px solid #eee;
+
+        .icon-container {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 30px;
+
+            border: 2px solid $mc-extra-light;
+            @include border-radius(50%);
+
+            i {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+
+    &.service-box-02 {
+        margin-bottom: 60px;
+        .icon-container {
+            float: left;
+            width: 60px;
+            height: 60px;
+
+            border: 2px solid $mc-extra-light;
+            @include border-radius(50%);
+
+            i {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .text-container {
+            padding-left: 80px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.service-box-03 {
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        @include box-shadow(0, 1px, 8px, #eee);
+
+        .icon-container{
+            width: 30px;
+            height: 30px;
+            float: left;
+        }
+
+        .text-container {
+            padding-left: 50px;
+
+            p {
+                padding-bottom: 0;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &.service-box-listed {
+        > li {
+            list-style: none;
+            float: left;
+            padding-right: 15px;
+            margin-bottom: 50px;
+
+            &:nth-child(2n) {
+                padding-right: 0;
+                padding-left: 15px;
+            }
+        }
+
+        .icon-container {
+            width: 30px;
+            float: left;
+
+            > i {
+                font-size: 30px;
+            }
+        }
+
+        .text-container {
+            padding-left: 50px;
+
+            p {
+                padding-bottom: 0;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &.service-box-04 {
+        .media {
+            display: block;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .icon-container{
+            width: 30px;
+            height: 30px;
+            float: left;
+        }
+
+        .text-container {
+            padding-left: 50px;
+
+            p {
+                padding-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}
+
+.col-md-12 .service-box.service-box-listed {
+    li {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        &:nth-child(2n){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }    
+}

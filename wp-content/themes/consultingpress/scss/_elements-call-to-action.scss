@@ -1,0 +1,76 @@
+/*  
+    6.6. ELEMENTS - CALL TO ACTION
+    ========================================================================= */
+
+.vc_row.cta-negative-top {
+    padding: 30px !important;
+
+    position: relative;
+
+    .row {
+        margin-bottom: 0;
+    }
+}
+
+.call-to-action {
+    .text {
+        max-width: 70%;
+        float: left;
+        padding-top: 15px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        max-width: 30%;
+        float: right;
+        span {
+            margin: 0;
+            display: block;
+            .fa {
+                margin-right: initial;
+            }
+        }
+    }
+
+    &.centered {
+        .text {
+            width: 100%;
+            max-width: 100%;
+            float: none;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .btn{
+            max-width: none;
+            float: none;
+            margin: 0 auto;
+            display: table;
+        }
+    }
+
+    .cta-social {
+        display: table;
+        margin: 30px auto 0;
+
+        li {
+            float: left;
+            list-style: none;
+            padding-right: 15px;
+
+            a {
+                color: $mc-regular;
+            }
+        }
+    }
+    span {
+        margin: 17px 0 0 15px;
+        display: inline-block;
+        .fa {
+            margin-right: 7px;
+        }
+    }
+}

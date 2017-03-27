@@ -1,0 +1,65 @@
+/*  
+    8. VISUAL COMPOSER CLASSES
+    ========================================================================= */
+
+.vc_row {
+    margin-bottom: 80px;
+    .wpb_column {
+        &:last-child {
+            .wpb_wrapper {
+                > .testimonial-block {
+                    margin-bottom: 0;
+                }
+                > .heading-style-01 {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                > .heading-style-02 {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        &:only-child {
+            .wpb_wrapper {
+                .wpb_content_element {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.vc_col-has-fill>.vc_column-inner, .vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_vc_row>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, .vc_row-has-fill+.vc_vc_row_inner>.vc_row>.vc_vc_column_inner>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner, .vc_row-has-fill>.vc_vc_column_inner>.vc_column_container>.vc_column-inner {
+    padding-top: 0 !important;
+}
+
+.vc_row-has-fill {
+    padding: 50px 0;
+}
+.wpb_text_column{
+    p {
+        &:last-child {
+            padding-bottom: 0;  
+        }
+    }
+}
+
+.post {
+    .post-body {
+        .vc_row{
+            &:last-child {
+                margin-bottom: 0;
+            } 
+        }
+    }
+}
+
+.vc_row[data-vc-full-width]{ 
+    position: relative;
+}

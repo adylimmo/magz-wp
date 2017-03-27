@@ -1,0 +1,21 @@
+/*  
+    6.33. ELEMENTS - TEAM MEMBER
+    ========================================================================= */
+
+.team-horizontal {
+    display: block;
+    width: 100%;
+    margin-bottom: 80px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    > img {
+        float: left;
+        width: 263px;
+    }
+    
+    .team-details-container {
+        padding-left: 293px;
+    }
+}

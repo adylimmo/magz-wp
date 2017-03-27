@@ -1,0 +1,45 @@
+/* =============================================================================
+    5. FOOTER
+    ========================================================================= */
+
+#footer-wrapper {
+    padding-top: 80px;
+    background-color: #030d26;
+    &.static {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    > #footer > .container > .row {
+        margin-bottom: 30px;
+    }
+
+    a, p, span, li {
+        font-size: 13px;
+        color: $mc-extra-light;
+    }
+
+    .copyright-container {
+        width: 100%;
+
+        .row {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            padding-bottom: 0;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        .copyright-right {
+            p {
+                text-align: right;
+            }
+        }
+    }
+}

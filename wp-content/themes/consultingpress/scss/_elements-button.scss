@@ -1,0 +1,99 @@
+/*  
+    6.5. ELEMENTS - BUTTON
+    ========================================================================= */
+
+.page-content.dark .btn span {
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    padding: 15px 35px;
+
+    @include border-radius-none(0);
+
+    span {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        z-index: 2;  
+
+        @include transition($default-transition);
+    }
+
+    &.icon-animated{ 
+        i {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -8px;
+            font-size: $base-font-size;
+            width: 20px;
+            opacity: 0;
+            z-index: 2;
+
+            @include transition($default-transition);
+            @include transform(translate(-25px, 0));
+        }
+
+        &:hover i{
+            left: 0;
+            opacity: 1;
+        }
+
+        &:hover span {
+            @include transform(translate(15px, 0));
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+
+        @include transform-origin(right top);
+        @include transform(scale(0, 1));
+        @include transition(transform 0.4s cubic-bezier(1, 0, 0, 1));
+    }
+
+    &:hover::after {
+        @include transform-origin(left top);
+        @include transform(scale(1,1));  
+    }
+    
+    &.btn-center {
+        display: table;
+        margin: 0 auto;
+    }
+    
+    &.btn-blue {
+        background-color: #071740;
+    }
+    
+    &.btn-large {
+        padding: 20px 50px;
+    }
+    
+    &.btn-small {
+        padding: 10px 20px;
+    }
+    
+    &.btn-yellow {
+        background-color: #ffcc01;
+    }
+}
+

@@ -1,0 +1,71 @@
+/*  
+    6.31. ELEMENTS - TABLE
+    ========================================================================= */
+
+.table {
+    border: none;
+    border-color: transparent;
+
+    > thead{
+        > tr {    
+
+            > th{
+                padding-bottom: 15px;
+                border-bottom: 1px solid $mc-extra-light;
+                font-weight: $font-weight-medium;
+                color: $mc-dark;
+            }
+        }
+    }
+
+    > tbody {
+        > tr {
+            @include transition($default-transition);
+
+            > td {
+                padding: 15px 8px;
+                font-size: 13px;
+                p {
+                    font-size: 13px;
+                    padding-bottom: 0;
+                    line-height: 1.42857143;
+                }
+            }
+        }
+    }
+
+    > tfoot {
+        > tr {
+            > td {
+                padding: 15px 8px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    &.events-table {
+        > tbody {
+            > tr {
+                td:first-child {
+                    color: $mc-dark;
+                    font-weight: $font-weight-medium;
+                    background-color: #eff3f7;
+                }
+
+                > td {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+
+    &.table-hover {
+        > tbody {
+            > tr {
+                &:hover {
+                    background-color: #eff3f7;
+                }
+            }
+        }
+    }
+}

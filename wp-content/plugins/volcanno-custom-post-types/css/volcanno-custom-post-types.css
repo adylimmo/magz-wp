@@ -1,0 +1,88 @@
+/* Hide post formats that are not used for Portfolio */
+.post-type-pi_portfolio .post-format-quote,
+.post-type-pi_portfolio #post-format-quote,
+.post-type-pi_portfolio .post-format-audio,
+.post-type-pi_portfolio #post-format-audio,
+.post-type-pi_portfolio .post-format-gallery,
+.post-type-pi_portfolio #post-format-gallery,
+.post-type-pi_portfolio .post-format-link,
+.post-type-pi_portfolio #post-format-link{
+    display: none;
+}
+
+.post-type-pi_portfolio .post-format-video + br{
+    display: none;
+}
+
+.post-type-pi_portfolio .post-format-quote + br{
+    display: none;
+}
+
+.post-type-pi_portfolio .post-format-audio + br{
+    display: none;
+}
+
+.post-type-pi_portfolio .post-format-gallery + br{
+    display: none;
+}
+
+/* Hide post formats that are not used for Gallery */
+.post-type-pi_gallery .post-format-quote,
+.post-type-pi_gallery #post-format-quote,
+.post-type-pi_gallery .post-format-audio,
+.post-type-pi_gallery #post-format-audio,
+.post-type-pi_gallery .post-format-gallery,
+.post-type-pi_gallery #post-format-gallery,
+.post-type-pi_gallery .post-format-link,
+.post-type-pi_gallery #post-format-link{
+    display: none;
+}
+
+.post-type-pi_gallery .post-format-video + br{
+    display: none;
+}
+
+.post-type-pi_gallery .post-format-quote + br{
+    display: none;
+}
+
+.post-type-pi_gallery .post-format-audio + br{
+    display: none;
+}
+
+.post-type-pi_gallery .post-format-gallery + br{
+    display: none;
+}
+
+/* Overriding Portfolio options */
+
+.rwmb-tab-nav li.disabled a{
+    color: #bbb;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.rwmb-tab-nav li.disabled a:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: "Enable overriding below.";
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 150px;
+}
+
+.rwmb-tab-nav li.disabled a:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}

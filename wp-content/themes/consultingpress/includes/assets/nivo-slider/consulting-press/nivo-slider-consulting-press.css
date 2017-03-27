@@ -1,0 +1,62 @@
+/*  6.28.2. NIVO SLIDER
+    ------------------------------------------------------------------------- */
+.nivo-caption {
+  top: 0;
+  max-width: 360px;
+  padding: 70px 40px 20px 40px;
+  background-color: #071740; }
+  .nivo-caption p, .nivo-caption h1, .nivo-caption h2, .nivo-caption h3, .nivo-caption h4, .nivo-caption h5, .nivo-caption h6 {
+    /*color: #fff;*/
+    padding-bottom: 15px;
+    margin-bottom: 0; }
+
+.nivo-controlNav {
+  position: relative;
+  top: -50px;
+  z-index: 1000;
+  text-align: left;
+  padding: 15px 40px;
+  text-indent: -9999px; }
+  .nivo-controlNav a {
+    display: block;
+    float: left;
+    margin-left: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: #748182;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+    .nivo-controlNav a.active {
+      position: relative;
+      top: -1px;
+      width: 10px;
+      height: 10px;
+      background-color: #fff; }
+
+.nivo-directionNav a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  right: 15px;
+  left: initial; }
+  .nivo-directionNav a.nivo-nextNav {
+    width: 44px;
+    height: 44px;
+    margin-top: 20px;
+    background: url("arrow-next.svg");
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .nivo-directionNav a.nivo-prevNav {
+    width: 44px;
+    height: 44px;
+    margin-top: -40px;
+    background: url("arrow-prev.svg");
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.slider-wrapper div[id^="slider-caption-"] {
+  display: none; }

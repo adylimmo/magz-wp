@@ -1,0 +1,178 @@
+/* ===================================================================================
+
+Theme Name: ConsultingPress
+Theme URI: http://pixel-industry.com/wordpress/consultingpress/
+Description: ConsultingPress is WordPress theme for consulting companies including tourism consulting, finance consulting and more.
+Author: pixel-industry
+Author URI: http://pixel-industry.com
+Version: 1.0
+License: Dual-licensed.  PHP under GNU General Public License, JS and CSS under ThemeForest License Terms
+License URI: http://themeforest.net/licenses/regular_extended
+Tags: four-columns, custom-menu, featured-images, post-formats, theme-options, threaded-comments, translation-ready
+Text Domain: consultingpress
+
+====================================================================================== */
+
+
+/* =============================================================================
+    TABLE OF CONTENTS
+    ========================================================================= */
+
+/*      1. CSS RESET
+        2. BASE STYLES
+            2.1. TYPOGRAPHY
+                2.1.1. HEADINGS
+                2.1.2. LINKS
+                2.1.3. TEXT LEVEL ELEMENTS
+        3. BASIC LAYOUT STYLES
+            3.1. PAGE CONTENT
+                3.1.1. PAGE CONTENT BACKGROUNDS
+            3.2. HELPERS - PADDINGS AND MARGINS, CENTERING TEXT...
+            3.3. PAGE TITLES
+            3.4. BREADCRUMBS
+            3.5. SIDEBAR
+        4. HEADERS
+            4.1. HEADER TRANSPARENT - GLOBAL HEADER STYLES (+ TOURISM & FINANCE HEADER)
+                4.1.1. TOP BAR QUICK LINKS
+                4.1.2. TOP BAR WPML - LANGUAGE SWITCHER
+                4.1.3. TOP BAR SOCIAL LINKS
+                4.1.4. TOP BAR WOOCOMMERCE CART
+            4.2. MAIN NAVIGATION
+                4.2.1. MAIN NAVIGATION - MEGA MENU SPECIFIC STYLES
+                4.2.2. SEARCH
+            4.3. HEDAER STYLE 02
+            4.4. HEADER STYLE 03 - DARK NAVIGATION BAR
+        5. FOOTER
+        6. ELEMENTS
+            6.1. ELEMENTS - ACCORDION
+            6.2. ELEMENTS - BANNER BOX
+            6.3. ELEMENTS - BLOCKQUOTE
+            6.4. ELEMENTS - BLOG
+                6.4.1. BLOG SEARCH
+                6.4.2. BLOG SINGLE
+                6.4.3. BLOG SINGLE COMMENTS
+                6.4.4. BLOG AND PORTFOLIO NAVIGATION
+                6.4.5. BLOG PAGES BACKGROUND
+            6.5. ELEMENTS - BUTTON
+            6.6. ELEMENTS - CALL TO ACTION
+            6.7. ELEMENTS - CHART
+            6.8. ELEMENTS - CIRCLE ICON
+            6.9. ELEMENTS - COMPANY TIMELINE
+            6.10. ELEMENTS - CONTACT FORM
+            6.11. ELEMENTS - CUSTOM HEADINGS
+            6.12. ELEMENTS - DIVIDER
+                6.12.1. DIVIDER DOTTED
+                6.12.2. DIVIDER LINE
+                6.12.3. DIVIDER THREE DOTS
+                6.12.4. DIVIDER WITH ICON
+                6.12.5. DIVIDER WITH "TO TOP" ICON
+            6.13. ELEMENTS - FEATURE BOX
+                6.13.1. FEATURE BOX GENERAL STYLING
+                6.13.2. FEATURE BOX INDUSTRY SECTORS
+            6.14. ELEMENTS - FEATURED PAGES
+            6.15. ELEMENTS - IMAGE REVEAL
+            6.16. ELEMENTS - KEY CONTACTS
+            6.17. ELEMENTS - LATEST POSTS
+                6.17.1. LATEST POSTS STYLE 01 - BIG IMAGE
+                6.17.2. LATEST POSTS STYLE 02 - SMALL IMAGE (IN FOOTER) 
+                6.17.3. LATEST POSTS STYLE 03 - NO IMAGE (IN SIDEBAR) 
+            6.18. ELEMENTS - LISTS
+            6.19. ELEMENTS - MAP
+            6.20. ELEMENTS - MESSAGE BOXES
+            6.21. ELEMENTS - NUMBER COUNTER
+            6.22. ELEMENTS - OWL CAROUSEL
+            6.23. ELEMENTS - PORTFOLIO
+                6.23.1. PORTFOLIO GRID STYLING
+                6.23.2. PORTFOLIO LIST STYLING
+                6.23.3. PORTFOLIO FILTERS
+                6.23.4. PORTFOLIO WIDGETS - LATEST PROJECTS (IN SIDEBAR)
+                6.23.5. PORTFOLIO SINGLE PAGE BACKGROUNDS
+            6.24. ELEMENTS - PRICING TABLE
+            6.25. ELEMENTS - READ MORE
+            6.26. ELEMENTS - SCROLL UP
+            6.27. ELEMENTS - SERVICES
+            6.28. ELEMENTS - SHOP
+                6.28.1. SHOP PRODUCTS
+                6.28.2. SHOP SINGLE
+                6.28.3. MY ACCOUNT
+            6.29. ELEMENTS - SLIDER
+                6.29.1. MASTER SLIDER
+                6.29.2. NIVO SLIDER
+            6.30. ELEMENTS - SOCIAL PHOTO STREAMS
+            6.31. ELEMENTS - TABLE
+            6.32. ELEMENTS - TABS
+            6.33. ELEMENTS - TEAM MEMBER
+            6.34. ELEMENTS - TESTIMONIAL
+            6.35. ELEMENTS - VIDEO
+            6.36. ELEMENTS - WIDGETS
+                6.36.1. BASIC WIDGET STYLING
+                6.36.2. WIDGET - CONTACT INFO LIST 
+                6.36.3. WIDGET - DOWNLOAD LINKS (BROCHURE DOWNLOAD)
+                6.36.4. WIDGET - NAV MENU (IN SIDEBAR)
+                6.36.5. WIDGET - NEWSLETTER WIDGET
+                6.36.6. WIDGET - TAG CLOUD
+                6.36.7. WIDGET - WOOCOMMERCE SEARCH
+                6.36.8. WIDGET - WOOCOMMERCE PRODUCT CATEGORIES
+                6.36.9. WIDGET - WOOCOMMERCE SHOPPING CART
+                6.36.10. WIDGET - WOOCOMMERCE PRICE FILTER
+                6.36.11. LATEST POSTS WIDGET
+                6.36.12. RECENT POSTS WIDGET EXTENDED
+                6.36.13. WIDGET - CALENDAR
+                6.36.14. WIDGET - CATEGORIES
+                6.36.15. WIDGET - ARCHIVE
+                6.36.16. WIDGETS - RSS
+                6.36.17. WIDGETS - RECENT COMMENTS 
+                
+*/
+
+@import 
+"reset",
+"variables",
+"mixins",
+"base",
+"layout_base",
+"layout-headers",
+"layout-footer",
+"elements-accordion",
+"elements-banner-box",
+"elements-blockquote",
+"elements-blog",
+"elements-button",
+"elements-call-to-action",
+"elements-chart",
+"elements-cirlce-icon",
+"elements-company-timeline",
+"elements-contact-form",
+"elements-custom-heading",
+"elements-divider",
+"elements-events",
+"elements-feature-box",
+"elements-featured-pages",
+"elements-image-reveal",
+"elements-key-contacts",
+"elements-latest-posts",
+"elements-lists",
+"elements-map",
+"elements-message-boxes",
+"elements-number-counter",
+"elements-owl-carousel",
+"elements-portfolio",
+"elements-pricing-table",
+"elements-read-more",
+"elements-scroll-up",
+"elements-services",
+"elements-shop",
+"elements-slider",
+"elements-social-photo-stream",
+"elements-table",
+"elements-tabs",
+"elements-team-member",
+"elements-testimonial",
+"elements-video",
+"elements-widgets",
+"wordpress-specific",
+"vc-specific";  
+
+
+
+

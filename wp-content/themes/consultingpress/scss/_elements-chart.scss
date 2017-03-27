@@ -1,0 +1,52 @@
+/*  
+    6.7. ELEMENTS - CHART
+    ========================================================================= */
+
+.chart-container {
+    position: relative;
+    max-width: 100%;
+
+    &.chart-center {
+        display: table;
+        margin: 0 auto;
+    }
+
+    iframe {
+        min-height: 0px;
+    }
+
+    canvas {
+        max-width: 100%;
+    }
+}
+.vc_chart {
+    .wpb_heading {
+        text-align: center;
+        font-size: 12px;
+        color: #6a6a6a;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .vc_chart {
+        .wpb_heading {
+            text-align: center;
+        } 
+        .vc_chart-with-legend {
+            width: 100% !important;
+            margin-bottom: 20px !important;
+        }
+        .vc_chart-legend {
+            width: 100% !important;
+            margin: 0 auto !important;
+            text-align: center;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+    .vc_round-chart {
+        position: relative;
+    }
+}

@@ -1,0 +1,222 @@
+/*  
+    6.13. ELEMENTS - EVENTS
+    ========================================================================= */
+
+#em-wrapper {
+    div.css-search{
+        @include border-radius-none(0);
+        padding: 0;
+        border: none;
+        input, select {
+            border: 1px solid #e3e3e3;
+        }
+        select {
+            min-width: 200px;
+        }
+        label {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        &.has-advanced {
+            div.em-search-main {
+                padding: 20px 20px 21px;
+                background-color: #030d26;
+
+                .em-search-submit {
+                    border: none;
+                    border-radius: 0;
+                    padding: 31px 33px;
+                    top: 0;
+                    right: 0;
+                    background-image: none;
+                    @include transition($default-transition);
+                }
+                input, select {
+                    border: none;
+                }
+            }
+        }
+        div.em-search-advanced {
+            padding: 20px 0 0 0;
+            label {
+                margin-left: 0;
+                margin-right: 0;
+                > span {
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+
+    table.events-table {
+        width: 100%;
+
+        tr {
+            border-bottom: 1px solid #ddd;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        thead {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+
+            .event-time, .event-description {
+                font-size: 15px;
+                font-weight: 500;
+                color: #071740;
+            }
+
+            th {
+                padding: 15px !important;
+            }
+        }
+        tbody {
+            tr{
+                td{
+                    padding-top: 10px !important;
+                    padding: 15px !important;
+                    &:first-child{
+                        background-color: #eff3f7;
+                        padding: 15px;
+                        font-weight: 500;
+                        font-size: 13px;
+                    }
+                    a {
+                        font-size: 15px;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+.event-categories {
+    padding-left: 0;
+    >li{
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+        >a{
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                position: absolute;
+                display: block;
+                content: "\f061";
+                font-family: "FontAwesome";
+                font-size: 10px;
+                left: 0;
+                top: -2px;
+            }
+        }
+    }
+}
+.em-booking-form-details {
+    padding: 0px;
+
+    .em-ticket-select, textarea {
+        border: 1px solid #ddd;
+        padding: 5px;  
+    }
+}
+.em-booking-buttons {
+    .em-booking-submit{
+        padding: 15px 35px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+    }
+}
+.css-my-bookings {
+    .table-wrap {
+        table {
+            width: 100%;
+            thead {
+                tr {
+                    th {
+                        border-bottom: 1px solid #eee;
+                        padding-bottom: 10px;
+                        color: #071740;
+                        font-weight: 500;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-content {
+    &.location {
+        .post-body {
+            ul{
+                padding-left: 0;
+
+                li {
+                    list-style: none;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+.em-booking-form-details {
+    input.input, textarea {
+        width: 85%;
+    }
+}
+.em-booking-form-details, .em-booking-login{
+    width: 100%;
+    input.input, textarea, .em-ticket-select {
+        min-height: 50px;
+        padding: 10px 10px 10px 15px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border: 1px solid #e3e3e3;
+
+    }
+    label {
+        padding: 13px 0;
+    }
+    textarea {
+        height: 300px;
+    }
+}
+div.em-booking-login {
+    padding: 0;
+    margin-top: 60px;
+    margin: 60px 0 0;
+    float: left;
+    border-left: none;
+    #em_wp-submit {
+        padding: 15px 35px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    label {
+        width: 110px;
+    }
+
+    a {
+        margin-top: 20px;
+        display: block;
+    }
+}

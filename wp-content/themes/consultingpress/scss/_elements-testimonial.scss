@@ -1,0 +1,68 @@
+/*  
+    6.34. ELEMENTS - TESTIMONIAL
+    ========================================================================= */
+.page-content.dark .testimonial-style-01 > p{
+    color: #fff;
+}
+
+.testimonial-style-01 {
+
+    > p {
+        font-family: $serif-font-family;
+        font-size: 21px;
+        font-style: italic;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.testimonial-style-02 {
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 30px 30px 30px 60px;
+    background-color: #fff;
+    border: 1px solid #eee;
+
+    @include box-shadow(0px, 1px, 10px, #eee);
+
+    &::before {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: -30px;
+        content: "\f10d";
+        width: 60px;
+        height: 60px;
+        font-family: "FontAwesome";
+        font-size: 15px;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;        
+    }
+    p {
+        color: #748182;
+    }
+    span.author {
+        color: $mc-dark;
+        font-weight: $font-weight-semibold;
+    }
+}
+#footer-wrapper {
+    .footer-widget-container {
+        .testimonial-style-02 {
+            p {
+                color: #748182;
+            }
+            span.author {
+                color: $mc-dark;
+            }
+        }
+    }
+}

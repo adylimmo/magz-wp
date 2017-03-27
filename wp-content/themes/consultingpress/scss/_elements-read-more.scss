@@ -1,0 +1,42 @@
+/*  
+    6.25. ELEMENTS - READ MORE
+    ========================================================================= */
+
+.read-more {
+    position: relative;
+    font-weight: $font-weight-medium;
+    padding-left: 15px;
+    display: inline-block;
+
+    &::before {
+        position: absolute;
+        content: "\f061";
+        top: 0;
+        left: 0;
+        font-family: "FontAwesome";
+        font-size: 10px;
+    }
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0px;
+        background-color: #fff;
+        @include transform-origin(right top);
+        @include transform(scale(0, 1));
+        @include transition(transform 0.4s cubic-bezier(1, 0, 0, 1));
+    }
+
+    &:hover::after {
+        @include transform-origin(left top);
+        @include transform(scale(1,1));  
+    }
+}
+
+ul + .read-more {
+    margin-top: 15px;
+}

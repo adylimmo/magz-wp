@@ -1,0 +1,96 @@
+/*  
+    6.12. ELEMENTS - DIVIDER
+    ========================================================================= */
+
+/*  6.12.1. DIVIDER DOTTED
+    ------------------------------------------------------------------------- */ 
+.divider-dotted {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    border-bottom: 1px dotted #e3e3e3;
+}
+
+
+/*  6.12.2. DIVIDER LINE
+    ------------------------------------------------------------------------- */ 
+
+.divider-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+}
+
+
+/*  6.12.3. DIVIDER THREE DOTS
+    ------------------------------------------------------------------------- */ 
+.divider {
+    display: block;
+    margin: 0 auto;
+    width: 44px;
+    height: 10px;
+
+    background-image: url("img/svg/icon-divider.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 44px 10px;
+}
+
+
+/*  6.12.4. DIVIDER WITH ICON
+    ------------------------------------------------------------------------- */ 
+.divider-icon {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+
+    i {
+        position: relative;
+        display: table;
+        margin: 0 auto;
+        top: 12px;
+        font-size: 24px;
+        background-color: #fff;
+        padding: 0 30px;
+    }
+}
+
+
+/*  6.12.5. DIVIDER WITH "TO TOP" ICON
+    ------------------------------------------------------------------------- */ 
+.divider-scroll-up {
+    border-bottom: 1px solid #eee;
+
+    .scroll-up {
+        position: relative;
+        top: 20px;
+        right: initial;
+        display: table;
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        background-color: $mc-dark;
+
+        @include border-radius(50%);
+        @include transition($default-transition);
+
+        i {
+            display: table-cell;
+            color: $mc-extra-light;
+            font-size: 9px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+
+            @include transition($default-transition);
+        }
+
+        &:hover i {
+            color: #fff;
+        }
+    }
+}

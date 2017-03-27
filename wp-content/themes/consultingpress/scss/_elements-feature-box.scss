@@ -1,0 +1,152 @@
+/*  
+    6.13. ELEMENTS - FEATURE BOX
+    ========================================================================= */
+
+
+/*  6.13.1. FEATURE BOX GENERAL STYLING
+    ------------------------------------------------------------------------- */ 
+.feature-box {
+    padding: 40px 20px;
+
+    &.dark {
+        h1, h2, h3, h4, h5, h6 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        p, span, li {
+            color: $mc-extra-light;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    &.centered {
+        h1, h2, h3, h4, h5, h6, p, a, span, li {
+            text-align: center;
+        }
+    }
+
+    p:last-child {
+        padding-bottom: 0;
+    }
+
+    .icon-container {
+        width: 35px;
+        height: 35px;
+        float: left;
+
+        i {
+            font-size: 35px;
+        }
+    }
+
+    .text-container {
+        padding-left: 45px;
+    }
+}
+
+.widget > .feature-box {
+    h3 {
+        font-size: 18px;
+    }
+}
+
+/*  6.13.2. FEATURE BOX INDUSTRY SECTORS
+    ------------------------------------------------------------------------- */ 
+.industry-sectors-grid {
+    margin-bottom: -30px;
+    
+    > li {
+        list-style: none;
+        margin-bottom: 30px;
+
+        > .feature-box {
+            &.service-box-05 {
+                padding: 0;  
+                
+                > .media {
+                    margin-bottom: 15px;
+                }
+                
+                > .icon-container {
+                    width: 40px;
+                    height: 40px;
+                    
+                    @include border-radius(50%);
+                    background-color: #eff3f7;
+                    
+                    > img, svg {
+                        display: block;
+                        width: 20px;
+                        height: 100%;
+                        margin: 0 auto;
+                    }
+                    
+                    > i {
+                        font-size: 20px;
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-align: center;
+                        width: 40px;
+                        height: 40px;
+                        color: #fff;
+                    }
+                    
+                    &.bkg-color-aqua {
+                        background-color: #4bd8ee;
+                    }
+                    
+                    &.bkg-color-red {
+                        background-color: #e21f2f;
+                    }
+                    
+                    &.bkg-color-brown {
+                        background-color: #c28e5b;
+                    }
+                    
+                    &.bkg-color-dark-blue {
+                        background-color: #071740;
+                    }
+                    
+                    &.bkg-color-green {
+                        background-color: #6ec25b;
+                    }
+                    
+                    &.bkg-color-orange {
+                        background-color: #f9b126;
+                    }
+                    
+                    &.bkg-color-teal {
+                        background-color: #0cb4ce;
+                    }
+                    
+                    &.bkg-color-yellow {
+                        background-color: #facd17;
+                    }
+                    
+                    &.bkg-color-purple {
+                        background-color: #a95bc2;
+                    }
+                }
+                
+                > .text-container {
+                    padding-left: 55px;
+                    
+                    h3{
+                        margin-bottom: 0;
+                        font-size: 15px;
+                        line-height: $base-line-height;
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+        
+        &:nth-child(3n + 1) {
+            clear: both;
+        }
+    }
+}

@@ -1,0 +1,202 @@
+/*  
+    6.17. ELEMENTS - LATEST POSTS
+    ========================================================================= */
+
+/*  6.17.1. LATEST POSTS STYLE 01 - BIG IMAGE 
+    ------------------------------------------------------------------------- */ 
+
+.pi-latest-posts-01 {
+
+    .post-container {
+        list-style: none;
+        float: left;
+        width: 30%;
+        margin-right: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    .post-media {
+        margin-bottom: 20px;
+
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .post-body {
+
+        .date {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: $letter-spacing-large;
+            color: $mc-light;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+
+            &.read-more {
+                display: inline-block;
+                width: auto;
+            }
+        }
+
+        h3 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+    }  
+
+}
+
+.owl-carousel.pi-latest-posts-01 {
+    .post-container {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*  6.17.2. LATEST POSTS STYLE 02 - SMALL IMAGE (IN FOOTER) 
+    ------------------------------------------------------------------------- */ 
+
+.widget > ul.pi-latest-posts-02 > .post-container {
+    list-style: none;
+    padding-left: 0;
+
+    &::before {
+        display: none;
+    }
+}
+
+.pi-latest-posts-02 {
+    > .post-container {
+        list-style: none;
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .post-media {
+        width: 70px;
+        float: left;
+
+        a {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .post-body {
+        padding-left: 85px;
+
+        .date {
+            display: block;
+            width: 100%;
+            color: $mc-light;
+            text-transform: uppercase;
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        h4 {
+            font-size: 13px;
+            line-height: 23px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+#footer-wrapper {
+    .pi-latest-posts-02 {
+        .post-body {
+            .date {
+                font-size: 10px;
+                color: $mc-light;
+            }
+
+            h4 {
+                color: $mc-extra-light;
+            }
+        }
+    }
+}
+
+
+/*  6.17.3. LATEST POSTS STYLE 03 - NO IMAGE (IN SIDEBAR) 
+    ------------------------------------------------------------------------- */ 
+
+.pi-latest-posts-03,
+.widget > .pi-latest-posts-03{
+    > li {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+
+        &::before {
+            display: none;
+        }
+
+        > a {
+            display: block;
+            width: 100%;
+
+            padding-bottom: 5px;
+
+            color: $mc-dark;
+            font-weight: $font-weight-medium;
+        }
+
+        > span.date {
+            position: relative;
+            display: block;
+            width: 100%;
+
+            padding-left: 15px;
+
+            font-size: 13px;
+            line-height: 20px;
+
+            &::before {
+                position: absolute;
+                display: block;
+                top: -2px; 
+                left: 0;
+                content: "\f017";
+                font-family: "FontAwesome";
+                font-size: 13px;
+                color: $mc-dark;
+            }
+        }
+    }
+}
+
+#footer-wrapper {
+    .footer-widget-container {
+        .pi-latest-posts-03,
+        .widget > .pi-latest-posts-03 {
+            > li {
+
+                > a {
+                    color: #fff;
+                }
+
+                > span.date {
+                    &::before {
+                        color: $mc-light;
+                    }
+                }
+            }
+        }
+    }
+}

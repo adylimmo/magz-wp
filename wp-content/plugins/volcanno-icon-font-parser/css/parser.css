@@ -1,0 +1,48 @@
+/* Styles for Icon Fonts page */
+
+.volcanno-icon-font-parser{
+    margin-left: 15px;
+}
+
+.volcanno-icon-font-parser h3{
+    font-size: 1.1em;
+}
+
+.volcanno-icon-font-parser div.updated{
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.volcanno-icon-font-parser .vifp-icon{
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+.volcanno-icon-font-parser .vifp-return{
+    margin-top: 10px;
+    display: block;    
+}
+
+.volcanno-icon-font-parser .vifp-enabled-fonts{
+    overflow: hidden;
+}
+
+.volcanno-icon-font-parser .vifp-enabled-fonts li{
+    width: 28%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    display: table;
+}
+
+.volcanno-icon-font-parser .vifp-output-field{
+    width: 50%;
+    height: 300px;
+    margin-top: 10px;
+}

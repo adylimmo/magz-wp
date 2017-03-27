@@ -1,0 +1,24 @@
+.redux-container-select_label ul.redux-select-label {
+  margin: 0;
+  padding: 0;
+}
+.redux-container-select_label .redux-select-label-remove {
+  color: #F00;
+  padding: 2px 4px;
+  margin-left: 5px;
+}
+.redux-container-select_label .redux-select-label-remove:hover {
+  background: red;
+  color: #fff;
+  text-decoration: none;
+}
+.redux-container-select_label .redux-select-label-add {
+  margin-bottom: 5px;
+}
+.redux-container-select_label .select-label-select {
+  margin: 0 7px 7px 0;
+}
+.redux-container-select_label .select-label{
+    width: 150px;
+}
+

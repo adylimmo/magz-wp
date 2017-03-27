@@ -1,0 +1,19 @@
+<wpml-config>
+  <admin-texts>
+    <key name="volcanno_options">
+      <key name="breadcrumbs_prefix" />
+      <key name="footer_copyright_left" />
+      <key name="footer_copyright_right" />
+      <key name="info_widgets">
+        <key name="text" />
+      </key>
+      <key name="404_top_heading" />
+      <key name="404_text" />
+      <key name="text" />
+      <key name="search_placeholder" />
+      <key name="logo" >
+        <key name="url" />
+      </key>
+    </key>
+  </admin-texts>
+</wpml-config>

@@ -1,0 +1,214 @@
+/*  
+    6.32. ELEMENTS - TABS
+    ========================================================================= */
+
+.vc_tta{
+    &.vc_general {
+        &.vc_tta-tabs{
+            .vc_tta-tab {
+                margin: 0;
+                @include transition($default-transition);
+            }
+            .vc_tta-panel-body {
+                border: none;
+                .wpb_text_column {
+                    p {
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &.vc_tta-style-consulting-press-theme-color-transparent{
+
+                .vc_tta-tab {
+                    padding-bottom: 15px;
+                    border-color: #eee;
+                    border-style: solid;
+
+                    > a {
+                        color: $mc-dark;
+                        border: none;
+                        padding: 0 25px 0 0;
+                    }
+                }
+                &.vc_tta-tabs-position-top {
+                    .vc_tta-tab {
+                        border-bottom-width: 1px ;
+
+                    }
+                    .vc_tta-panel-body {
+                        padding: 30px 0 0 0;
+                    }
+                }
+                &.vc_tta-tabs-position-left {
+                    .vc_tta-tabs-container{
+                        width: 30%;
+                        .vc_tta-tab {
+                            border-right-width: 1px;
+                        }
+                    }
+                    .vc_tta-panel-body {
+                        padding: 0 0 0 30px;
+                    }
+
+                }
+            }
+            &.vc_tta-style-consulting-press-theme-color{
+                .vc_tta-tab {
+                    background-color: #eff3f7;
+                    border: none;
+
+                    > a {
+                        color: $mc-dark;
+                        border: none;
+                        padding: 15px 25px;
+                    }
+                }
+                &.vc_tta-tabs-position-top {
+                    .vc_tta-panel-body {
+                        padding: 30px 0 0 0;
+                    }
+                }
+                &.vc_tta-tabs-position-left {
+                    .vc_tta-tabs-container{
+                        width: 30%;
+                    }
+                    .vc_tta-panel-body {
+                        padding: 0 0 0 30px;
+                    }
+                }
+            }
+            &.vc_tta-style-consulting-press-dark-color{
+                .vc_tta-tab {
+                    background-color: #071740;
+                    border: none;
+
+                    > a {
+                        color: #fff;
+                        border: none;
+                        padding: 15px 25px;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+                .vc_tta-panel-body {
+                    background-color: #eff3f7;
+                    padding: 40px;
+                }
+                &.vc_tta-tabs-position-left {
+                    .vc_tta-tabs-container{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.tabs-container {
+    > .tabs {
+        overflow: hidden;
+
+        > li {
+            position: relative;
+            overflow: hidden;   
+            float: left;
+            list-style: none;
+            cursor: pointer;
+
+            > a {
+                padding-right: 25px;
+                color: $mc-dark;
+                font-weight: $font-weight-medium;
+            }
+        }
+
+        &.vertical {
+            float: left;
+            width: 30%;
+            border-right: 1px solid #eee;
+
+            > li {
+                width: 100%;
+                border-bottom: none;
+
+                a {
+                    display: block;
+                    width: 100%;                    
+                }
+            }
+        }
+    }
+
+    > .tab-content-wrap {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 30px;
+
+        &.vertical {
+            float: left;
+            width: 70%;
+            padding-top: 0;
+            padding-left: 30px;
+        }
+    }
+
+    &.tabs-simple {
+        > .tabs {
+            > li {
+                padding-bottom: 15px;
+                border-bottom: 1px solid #eee;
+            }
+
+            &.vertical {
+                > li {
+                    width: 100%;
+                    border-bottom: none;
+                }
+            }
+        }
+
+
+    }
+
+    &.tabs-dark {
+        > .tabs {
+            > li {
+                padding: 0;
+
+                a {
+                    background-color: $mc-dark;
+                    display: block;
+                    color: #fff;
+                    padding: 15px 25px;
+                }
+            }
+        }
+
+        > .tab-content-wrap {
+            padding: 40px;
+            background-color: #eff3f7;
+        }
+    }
+
+    &.tabs-theme {
+        > .tabs {
+            > li {
+                padding: 0;
+
+                a {
+                    background-color: #eff3f7;
+                    display: block;
+                    color: $mc-dark;
+                    padding: 15px 25px;
+                }
+            }
+        }
+
+        > .tab-content-wrap {
+            background-color: #fff;
+        }
+    }
+}

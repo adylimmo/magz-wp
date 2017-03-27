@@ -1,0 +1,45 @@
+/*  
+    6.16. ELEMENTS - KEY CONTACTS
+    ========================================================================= */
+
+.key-contacts {
+    > ul {
+        padding-left: 0;
+
+        > li {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+    }
+
+    img {
+        float: left;
+        width: 100px;
+        height: auto;
+    }
+
+    .text-container {
+        padding-left: 115px;
+
+        h4 {
+            margin-bottom: 3px;
+            font-size: 18px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 3px;
+        }
+
+        .contacts-title {
+            margin-bottom: 15px;
+        }
+
+        .fa-ul > li {
+            padding-bottom: 3px;
+
+            a, p, span {
+                font-size: 13px;
+            }
+        }
+    }
+}

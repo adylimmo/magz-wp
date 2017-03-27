@@ -1,0 +1,41 @@
+/*  
+    6.22. ELEMENTS - OWL CAROUSEL
+    ========================================================================= */
+
+.owl-controls {
+    
+    > .owl-nav {
+
+        > .owl-prev {
+            position: relative;
+            left: 50%;
+            margin-left: -48px;
+            top: 40px;
+            width: 44px;
+            height: 44px;
+            background-image: url("img/svg/arrow-prev.svg");
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        > .owl-next {
+            position: relative;
+            left: 50%;
+            margin-left: 4px;
+            top: -4px;
+            width: 44px;
+            height: 44px;
+            background-image: url("img/svg/arrow-next.svg");
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.owl-carousel.client-carousel {
+    min-height: 50px;
+}
+
+

@@ -1,0 +1,53 @@
+/*  
+    6.24. ELEMENTS - PRICING TABLE
+    ========================================================================= */
+
+.pricing-table {
+    background-color: #fff;
+    border: 3px double #eee;
+    padding: 40px;
+
+    h1, h2, h3 {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .price {
+        display: block;
+        border-top: 3px double #eee;
+        border-bottom: 3px double #eee;
+        padding: 20px 0;
+        text-align: center;
+
+        span {
+            font-size: 21px;
+            color: $mc-dark;
+            font-weight: $font-weight-medium;
+        }
+        
+        &:last-child {
+            padding-bottom: 20px !important;
+        }
+    }
+
+    li {
+        padding: 15px 0;
+        text-align: center;
+        list-style: none;
+        border-bottom: 1px solid #eee;
+
+        &.head {
+            list-style: none;
+            border-bottom: none;
+        }
+
+        &.pricing-footer {
+            margin-top: 30px;
+            border-bottom: none;
+        }
+    }
+
+    &.active {    
+        @include box-shadow(1px, 0px, 15px, #eee);        
+    }
+}

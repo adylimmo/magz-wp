@@ -1,0 +1,103 @@
+/*  
+    6.18. ELEMENTS - LISTS
+    ========================================================================= */
+
+.fa-ul {
+    margin-left: 0;
+
+    &.large-icons {
+
+        > li {
+            display: block;
+            float: left;
+            width: 100%;
+            padding-bottom: 10px;
+            
+            .icon-container {
+                float: left;
+                font-size: 23px;
+            }
+            
+            .li-content {
+                padding-left: 40px;
+                
+                p {
+                    padding-bottom: 0;
+                }
+                
+                p + a{
+                    margin-top: 15px;
+                }
+                
+                h1, h2, h3, h4, h5, h6 {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        
+        &.detailed {
+            > li {
+                padding-bottom: 30px;
+            }
+        }
+    }
+    
+    &.ul-circled {
+        .icon-container {
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-bottom: 0 !important;
+            
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 20px;
+                height: 100%;
+            }
+            
+            @include border-radius(50%);
+        }
+        
+        .li-content {
+            padding-left: 50px;
+            padding-top: 8px;
+            p {
+                &:last-child {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+    
+    + p,
+    + a,
+    + span,
+    + ul, 
+    +img{
+        margin-top: 15px;
+    }
+    
+    &.default {      
+        
+        li {
+            padding-bottom: 10px;
+        }
+        
+        i{
+            float: left;
+            padding-top: 4px;
+            font-size: 13px;
+        }
+        
+        p {
+            padding-left: 20px;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.list-style-none {
+    list-style: none;
+}
+

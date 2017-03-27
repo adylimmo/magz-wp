@@ -1,0 +1,49 @@
+/*  
+    6.21. ELEMENTS - NUMBER COUNTER
+    ========================================================================= */
+
+.odometer-container {
+
+    .odometer-inner {
+        display: table;
+        margin: 0 auto 25px;
+        
+       > i {
+            padding-right: 15px;
+        }
+    }
+    
+    p {
+        display: block;
+        width: 100%;
+        color: $mc-dark;
+        text-align: center;
+        font-size: 18px;
+        font-weight: $font-weight-medium;
+        padding-bottom: 0;
+    }
+    
+    .digit-mark {
+        position: relative;
+        top: 11px;
+        left: 5px;
+        font-size: 48px;
+    }
+}
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+    font-size: 48px;
+    font-weight: $font-weight-medium;
+    text-align: center;
+}
+
+.page-content.dark {
+    .odometer-container {
+        .odometer-value, .odometer-formatting-mark {
+            color: #fff;
+        }
+        
+        .digit-mark {
+            color: #fff;
+        }
+    }
+}

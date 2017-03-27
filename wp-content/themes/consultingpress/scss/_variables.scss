@@ -1,0 +1,99 @@
+//  ============================================================================
+//      MAIN COLORS
+//  ============================================================================
+
+//  Main color (mc) extra light
+//  ============================
+//  Used for:
+//      - transparent header nav, social links, ...
+//      - less important text on dark backgrounds (example cite on blockquote, 
+//        where blockquote is on dark background)
+//      - footer text, footer links, ...
+
+$mc-extra-light: #c5dadc;
+
+
+//  Main color (mc) light
+//  =====================
+//  Used for:
+//      - less important text on body (small captions above and below headings, 
+//        dates on blog posts, etc...)
+
+$mc-light: #acb4b5;
+
+
+//  Main color (mc) regular
+//  =======================
+//  Used for:
+//      - regular body text (paragraphs, li, ...)
+
+$mc-regular: #748182;
+
+
+//  Main color (mc) dark
+//  ====================
+//  Used for:
+//      - heading color
+//      - important body text (for example bolded text)
+
+$mc-dark: #071740;
+
+
+//  Main color - background
+//  =======================
+//  Used for:
+//      - body background
+
+$mc-background: #fff;
+
+
+//  ============================================================================
+//      FONT DECLARATION
+//  ============================================================================
+
+//  Base font families
+//  ==================
+
+$body-font-family: "Poppins", Arial, sans-serif;
+$heading-font-family: "Poppins", Arial, sans-serif;
+$serif-font-family: "PT Serif", Georgia, Times New Roman, serif;
+
+
+//  Base font sizes 
+//  ===============
+
+$base-font-size: 15px;
+$base-line-height: 25px;
+
+
+//  Font weights
+//  ============
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+//  Letter Spacing
+//  ==============
+$letter-spacing-large: 4px;
+$letter-spacing-regular: 1px;
+
+
+
+//  ============================================================================
+//      ANIMATIONS
+//  ============================================================================
+
+//  Deafult transition
+//  ==================
+//  Used for:
+//      - hover effect on links, dropdowns, ...
+
+$default-transition: all 0.3s ease-in-out 0s;
+
+
+
+
+

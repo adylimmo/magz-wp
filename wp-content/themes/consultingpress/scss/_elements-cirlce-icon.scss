@@ -1,0 +1,13 @@
+/*  
+    6.8. ELEMENTS - CIRCLE ICON
+    ========================================================================= */
+
+.circle-icon-animate {
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+    transition: stroke-dashoffset 1s linear;
+
+    &:hover {
+        stroke-dashoffset: 0;
+    }
+}

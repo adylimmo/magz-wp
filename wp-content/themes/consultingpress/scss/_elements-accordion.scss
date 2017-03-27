@@ -1,0 +1,120 @@
+/* =============================================================================
+    6. ELEMENTS
+    ========================================================================= */
+
+/*  
+    6.1. ELEMENTS - ACCORDION
+    ========================================================================= */
+
+.vc_tta{
+    &.vc_general{
+        &.vc_tta-accordion{
+            .vc_tta-controls-icon-position-left {
+                .vc_tta-controls-icon {
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    color: #fff;
+                    left: 0;
+                    @include border-radius(50%);
+                    &.vc_tta-controls-icon-plus {
+                        &:before{
+                            margin: 0 auto;
+                            width: 10px;   
+                        }
+                        &::after {
+                            margin-top: -5px;
+                            height: 10px;
+                            top: 50%;
+                        }
+                    }
+                }
+                &.vc_tta-panel-title {
+                    display: inline-block;
+                    width: 100%;
+                    line-height: 22px;
+                    &>a{
+                        display: block;
+                        width: 100%;
+                        float: left;
+                        padding-left: 40px;
+                        padding: 6px 0 6px 40px;
+                        font-size: 18px;
+                        color: $mc-dark;
+                        font-weight: $font-weight-semibold;
+                    }
+                }
+            }
+
+            &.vc_tta-style-consulting-press-default {
+                .vc_tta-panel-heading {
+                    padding: 0;
+                    line-height: 10px;
+                    border: none;
+                    margin-bottom: 10px;
+                }
+                .vc_tta-panel-body {
+                    padding: 0 0 0 40px;
+                    margin-bottom: 20px;
+                    border: none;
+                    .wpb_text_column {
+                        p{
+                            &:last-child{
+                                padding-bottom: 0;
+                            } 
+                        }
+                    }
+                } 
+                &.vc_tta-panel-title {
+                    padding: 3px 0;
+                }
+            }
+            &.vc_tta-style-consulting-press-boxed {
+                .vc_tta-panel-heading {
+                    padding: 28px 30px 27px;
+                    background-color: #eff3f7;
+                    margin-bottom: 20px;
+                    line-height: 10px;
+                    border: none;
+                    @include border-radius(0);
+                }
+                .vc_tta-panel-body {
+                    background-color: #eff3f7;
+                    padding: 40px;
+                    margin-bottom: 30px;
+                    border: none;
+                    .wpb_text_column {
+                        p{
+                            &:last-child{
+                                padding-bottom: 0;
+                            } 
+                        }
+                    }
+                    .vc_tta-panel-body {
+                        padding: 0;
+                        margin-bottom: 0;
+                    }
+                    .vc_tta-panel {
+                        margin-bottom: 0 !important;
+                    }
+                } 
+            }
+        } 
+        &.dark {
+            .vc_tta-controls-icon-position-left {
+                &.vc_tta-panel-title {
+                    &>a{
+                        color: #fff;
+                    }
+                }
+            }
+            .vc_tta-panel-body {
+                .wpb_text_column {
+                    p{
+                        color: #c5dadc;
+                    }
+                }
+            }
+        }
+    }
+}

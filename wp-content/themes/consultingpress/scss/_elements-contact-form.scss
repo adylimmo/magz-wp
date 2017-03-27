@@ -1,0 +1,126 @@
+/*  
+    6.10. ELEMENTS - CONTACT FORM
+    ========================================================================= */
+
+.wpcf7 {
+    .wpcf7-text,
+    .wpcf7-email,
+    .wpcf7-textarea {
+        min-height: 50px;
+        padding: 10px 10px 10px 15px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border: 1px solid #e3e3e3;
+        width: 49.2%;
+        margin-left: 0;
+
+        &:focus {
+            border-color: #d3d3d3;
+        }
+    }
+    .wpcf7-form-control-wrap:nth-child(2n+1) {
+        .wpcf7-text,.wpcf7-email {
+            margin-left: 0;
+            margin-right: 1.5%;
+        }
+    }
+
+    .wpcf7-textarea {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    @include placeholder {
+        color: $mc-light;
+        font-size: 13px;
+    };
+
+    .wpcf7-submit {
+        float: right;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-weight: $font-weight-semibold;
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: $letter-spacing-regular;
+
+        @include transition($default-transition);
+
+        &.wpcf7-submit-full{
+            width: 100%;
+        }
+    }
+    .contact-simple {
+        .wpcf7-text,
+        .wpcf7-email,
+        .wpcf7-textarea {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .job-application-form {
+        .wpcf7-submit {
+            width: 100%;
+        }
+    }
+}
+
+.wpcf7-request-quote {
+
+    .wpcf7-text,
+    .wpcf7-email,
+    .wpcf7-textarea {
+        width: 48.5%;
+        margin-left: 1.5%;
+    }
+    .wpcf7-form-control-wrap:nth-child(2n+1) {
+        .wpcf7-text,.wpcf7-email {
+            margin-left: 0;
+            margin-right: 1.5%;
+        }
+    }
+    .wpcf7-submit {
+        width: 100%;
+    }
+
+}
+
+.dark {
+    .wpcf7 {
+        .wpcf7-text,
+        .wpcf7-email,
+        .wpcf7-textarea {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+
+            &:focus {
+                border-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        @include placeholder {
+            color: #fff;
+        };
+    }
+}
+
+.g-recaptcha {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+
+    display: none;
+
+    > div {
+        > div {
+            max-height: 78px;
+        }
+    }
+
+    &.recaptcha-visible {
+        display: block;
+    }
+}

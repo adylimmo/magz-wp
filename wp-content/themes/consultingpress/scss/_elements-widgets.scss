@@ -1,0 +1,907 @@
+/*  
+    6.36. ELEMENTS - WIDGETS
+    ========================================================================= */
+
+/*  6.36.1. BASIC WIDGET STYLING
+    ------------------------------------------------------------------------- */ 
+
+.footer-widget-container {
+    .widget {
+        > .title {
+            h1, h2, h3, h4, h5, h6 {
+                color: #fff;
+            }            
+        }
+    }
+}
+
+.widget {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    ul {
+        ul {
+            padding-left: 25px;
+        }
+    }
+    > .title {
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+
+    > li {
+        list-style: none;
+
+    }
+    select {
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: 100%;
+        display: block;
+        color: #777;
+        left: 0;
+        top: 0;
+        padding: 10px 60px 10px 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        @include placeholder{
+            color: $mc-regular;
+        }
+    }
+    > ul {
+        padding-left: 0;
+
+        &.contact-info-list {
+            padding-left: 10px;
+
+            li{
+                list-style: none;
+
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    > ul > li {
+        position: relative;
+        list-style: none;
+        padding-left: 15px;
+        color: #acb4b5;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "\f061";
+            top: -2px;
+            left: 0;
+            font-family: "FontAwesome";
+            font-size: 10px;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.aside-widgets {
+    .widget {
+        margin-bottom: 50px;
+    }
+    > li.widget:last-child {
+        margin-bottom: 0;
+    }
+}
+.footer-widget-container {
+    .widget {
+        &:only-child {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+/*  6.36.2. WIDGET - CONTACT INFO LIST 
+    ------------------------------------------------------------------------- */ 
+
+.contact-info-list {
+    > li {
+        padding-left: 25px;
+
+        i {
+            position: relative;
+            margin-left: -25px;
+            margin-right: 10px;
+            width: 20px;
+        }
+    }
+}
+
+
+/*  6.36.3. WIDGET - DOWNLOAD LINKS (BROCHURE DOWNLOAD)
+    ------------------------------------------------------------------------- */ 
+
+a.download-link {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 15px 20px 15px 45px;
+    margin-bottom: 2px;
+
+    &::before {
+        display: block;
+        position: absolute;
+        left: 20px;
+        content: "\f1c1";
+        font-family: "FontAwesome";        
+    }
+}
+
+#footer-wrapper {
+    .footer-widget-container {
+        a.download-link {
+            background-color: #1a2236;
+            border-color: #1a2236;
+        }
+    }
+}
+
+
+/*  6.36.4. WIDGET - NAV MENU (IN SIDEBAR)
+    ------------------------------------------------------------------------- */
+
+
+.widget_nav_menu {
+    .menu {
+        padding-left: 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        list-style: none;
+
+        background-color: #fff;
+        border: 1px solid #eee;
+        padding: 15px 20px;
+        margin-bottom: 2px;
+
+        @include transition($default-transition);
+
+        > a{
+            position: relative;
+            display: block;
+            width: 100%;
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: "\f054";
+                top: -1px;
+                right: 0;
+                font-family: "FontAwesome";
+                font-size: 10px;
+            }
+        }
+
+        &.current-menu-item {
+            background-color: #eff3f7;
+
+            > a:hover{
+                color: $mc-light;
+            }
+        }
+
+        &:hover {
+            background-color: #eff3f7;
+
+            >a {
+                color: $mc-light;
+            }
+        }
+        .sub-menu {
+            padding-left: 0;
+            .menu-item {
+                border: none;
+                background-color: transparent;
+                padding: 5px 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#footer-wrapper {
+    .footer-widget-container {
+        .widget_nav_menu {
+            .menu-item {
+                background-color: transparent;
+                border-color: transparent;
+                padding: 0 0 5px 15px;
+                &.current-menu-item {
+                    background-color: transparent;
+                }
+                a {
+                    &:after {
+                        display: none;
+                    }
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        content: "\f061";
+                        top: -2px;
+                        left: -15px;
+                        font-family: "FontAwesome";
+                        font-size: 10px;
+                    }
+                }
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+/*  6.36.5. WIDGET - NEWSLETTER WIDGET 
+    ------------------------------------------------------------------------- */ 
+
+.widget_newsletterwidget {
+    display: table;
+    margin: 0 auto;
+    .tnp-widget{
+        margin-top: 15px;
+        .tnp-field {
+            margin-bottom: 0;
+            float: left;
+            label {
+                display: none;
+            }
+            &.tnp-field-email{
+                width: 88.4%;
+                .tnp-email {
+                    height: 40px;
+                    padding-bottom: 10px !important;
+                    border-top: none !important;
+                    border-right: none !important;
+                    border-bottom: 1px solid #eee !important;
+                    border-left: none !important;
+                    background-color: #fff !important;
+                    @include body-font-stack();
+                }
+            }
+            &.tnp-field-button{
+                position: relative;
+                left: 0;
+                width: 40px !important;
+                height: 40px !important;
+
+                .tnp-submit {
+                    height: 100%;
+                    border: none !important;
+                    text-indent: 9999px;
+                    text-transform: uppercase;
+                    font-weight: $font-weight-medium;
+                    color: #fff;
+                    background-image: url(img/svg/icon-envelope.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 24px;
+                    @include border-radius(2px);
+
+                    @include transition($default-transition);
+                }
+            }
+
+            @include placeholder{
+                color: $mc-regular;            
+            }
+        }
+    }
+}
+
+.footer-widget-container {
+    .widget_newsletterwidget {
+        .tnp-widget{
+            margin-top: 23px;
+            .tnp-field {
+                &.tnp-field-email{
+                    width: 84.6%;
+                    .tnp-email {
+                        border-bottom: none !important;
+                        color: #c5dadc;
+                        background-color: #1A2236 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.newsletter-widget {
+    display: table;
+    margin: 0 auto;
+
+    .email {
+        padding: 15px 130px 15px 30px;
+        background-color: #fff;
+        border: 1px solid #e3e3e3;
+        @include border-radius(30px 0 0 30px);
+        @include body-font-stack();
+
+    }
+
+    @include placeholder{
+        color: $mc-regular;            
+    };
+
+    .submit {
+        position: relative;
+        left: -5px;
+        border: none;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-weight: $font-weight-medium;
+        color: #fff;
+
+        @include transition($default-transition);
+    }
+}
+
+.footer-widget-container .newsletter-widget {
+    .email {
+        background-color: #1a2236;
+        @include border-radius(30px 0 0 30px);
+        color: $mc-extra-light;
+        border: none;
+    }
+
+    @include placeholder{
+        color: $mc-extra-light;            
+    };
+
+    .submit {
+        left: -5px;
+        width: initial;
+    }
+}
+
+
+/*  6.36.6. WIDGET - TAG CLOUD
+    ------------------------------------------------------------------------- */ 
+.widget_tag_cloud, .widget_product_tag_cloud {
+    .tagcloud {
+        display: inline-block;
+        > a {
+            float: left;
+            border: 1px solid #eee;
+            padding: 5px 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 15px !important;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.footer-widget-container {
+    .tagcloud {
+        display: inline-block;
+        > a {
+            border: 1px solid #434853;
+            font-size: 13px !important;
+
+            &:hover, &:focus {
+                color: #fff !important;
+            }
+        }
+    }
+}
+
+
+/*  6.36.7. WIDGET - WOOCOMMERCE SEARCH
+    ------------------------------------------------------------------------- */ 
+.woocommerce {
+    &.widget_product_search {
+        .woocommerce-product-search{
+            position: relative;
+            label {
+                display: none;
+            }
+            .search-field {
+                border: none;
+                border-bottom: 1px solid #C5D9DB;
+                width: 100%;
+                height: 50px;
+            }
+
+            input[type="submit"] {
+                position: absolute;
+                right: 0;
+                top: 10px;
+                width: 30px;
+                min-height: 30px;
+                border: none;
+                background-color: transparent;
+                background-image: url(img/svg/search-dark.svg);
+                background-size: 15px;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-indent: -9999px;
+            }
+
+            @include placeholder {
+                color: $mc-light;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/*  6.36.8. WIDGET - WOOCOMMERCE PRODUCT CATEGORIES
+    ------------------------------------------------------------------------- */ 
+
+.woocommerce {
+    .widget_product_categories {
+        .product-categories {
+            .cat-item{
+                position: relative;
+                list-style-type: none;
+                padding-bottom: 3px;
+                a {
+                    font-weight: $font-weight-normal;
+                }
+                &:before {
+                    position: absolute;
+                    top: -1px;
+                    @include links-arrow-right();
+                    color: #748182;
+                }
+                &:hover {
+                    a {
+                        color: #acb4b5;
+                    }
+                }
+                .children {
+                    padding-left: 20px;
+                    .cat-item {
+                        list-style-type: none;
+                        padding-left: 15px;
+                        position: relative;
+                        &:before {
+                            position: absolute;
+                            left: 0;
+                            font-size: 10px;
+                            @include links-arrow-right();
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*  6.36.9. WIDGET - WOOCOMMERCE SHOPPING CART
+    ------------------------------------------------------------------------- */ 
+.woocommerce {
+    ul.cart_list, ul.product_list_widget {
+        li {
+            a{
+                font-weight: $font-weight-medium;
+            }  
+        }
+    }
+    .widget_shopping_cart {
+        .total{
+            border-top: 3px double #ebe9eb;
+            padding: 15px 0 15px;
+        }
+    }
+}
+
+/*  6.36.10. WIDGET - WOOCOMMERCE PRICE FILTER
+    ------------------------------------------------------------------------- */ 
+.woocommerce {
+    .widget_price_filter {
+        .ui-slider {
+            .ui-slider-range {
+                background-color: #839191;
+            } 
+            .ui-slider-handle {
+                top: -.4em;
+                background-color: #839191;
+            }
+        }
+        .ui-slider-horizontal {
+            height: 3px;
+        }
+        .price_slider_wrapper {
+            .ui-widget-content{
+                background-color: #DDDDDD;
+            }
+        }
+        .price_slider_amount {
+            text-align: left;
+            .price-label {
+                color: #777777;
+            }
+            .button {
+                font-size: 13px;
+                float: right;
+                text-transform: uppercase;
+                padding: 8px 10px 5px;
+                color: #fff;
+            }
+        }
+    }
+}
+/* 6.36.11. LATEST POSTS WIDGET
+   ------------------------------------------------------------------------- */
+.widget_recent_entries {
+    ul {
+        > li {
+            position: relative;
+            background: none;
+            background-image: none !important;
+            padding-left: 18px;
+            padding-bottom: 0;
+
+            &:last-child{
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            h4{
+                line-height: 23px;
+                margin-bottom: 5px;
+                font-size: 15px;
+                color: $mc-dark;
+                font-weight: $font-weight-semibold;
+
+                @include transition($default-transition);
+            }
+            .post-date {
+                position: relative;
+                font-size: 13px;
+                padding-top: 3px;
+                color: #acb4b5;
+                padding-left: 25px;
+                &:before {
+                    content: "\f017";
+                    left: 0;
+                    font-family: FontAwesome;
+                    font-size: 12px;
+                    position: relative;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 6.36.12. RECENT POSTS WIDGET EXTENDED
+   ------------------------------------------------------------------------- */
+.rpwe_widget {
+    div.rpwe-block {
+        .rpwe-ul{
+            padding-left: 0;
+            li {
+                border-bottom: none;
+                margin-bottom: 15px;
+                list-style-type: none;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .rpwe-title {
+                    line-height: 23px;
+                    margin-bottom: 5px;
+                    font-size: 15px;
+
+                    a {
+                        color: $mc-dark;
+                        font-weight: $font-weight-semibold;
+                    }
+                }
+                time.rpwe-time {
+                    position: relative;
+                    font-size: 13px;
+                    padding-top: 3px;
+                    color: #acb4b5;
+                }
+                .rpwe-thumb {
+                    border: none !important;
+                    box-shadow: none!important;
+                    margin: 5px 13px 20px 0;
+                    padding: 0 !important;
+                    @include transition($default-transition);
+
+                    &:hover {
+                        opacity: 0.85;
+                    }
+                }
+            }
+        }
+    }
+}
+.rpwe-alignleft{
+    display: inline;
+    float: left;
+}
+
+.rpwe-alignright{
+    display: inline;
+    float: right;
+}
+
+.rpwe-aligncenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rpwe-clearfix:before,
+.rpwe-clearfix:after{
+    content: "";
+    display: table !important;
+}
+
+.rpwe-clearfix:after{
+    clear: both;
+}
+
+.rpwe-clearfix{
+    zoom: 1;
+}
+
+.aside-widgets {
+    .rpwe_widget {
+        div.rpwe-block {
+            li {
+                .rpwe-title {
+                    font-size: 15px !important;
+                    margin-bottom: 0;
+                    line-height: 24px;
+                    a{
+                        font-weight: $font-weight-medium;
+                        color: #232020;
+                        line-height: 28px;
+                    }
+                }
+                time.rpwe-time {
+                    &:before {
+                        content: "\f017";
+                        left: 0;
+                        font-family: FontAwesome;
+                        font-size: 12px;
+                        position: relative;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.footer-widget-container {
+    .rpwe_widget {
+        div.rpwe-block {
+            .rpwe-ul{
+                li {
+                    margin-bottom: 5px;
+                    time.rpwe-time {
+                        text-transform: uppercase;
+                        font-size: 10px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 6.36.13. WIDGET - CALENDAR
+    ------------------------------------------------------------------------- */
+
+.widget_calendar {
+    #wp-calendar{
+        width: 100%;
+        caption{
+            text-align: center;
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+        }
+        thead{
+            background: #ececec;
+        }
+        tfoot{
+            background: #ececec;
+            padding-top: 5px;
+
+            #prev{
+                text-align: left;
+            }
+            #next{
+                text-align: right;
+            }
+        }
+        td,th {
+            text-align: center;
+            padding: 7px;
+        }
+        #today {
+            color: #fff;
+            background: #ececec;
+            a{
+                color: #fff;
+                padding: 5px;
+            }
+        }
+    }
+}
+.footer-widget-container {
+    .widget_calendar {
+        #wp-calendar{
+            caption {
+                color: #c5dadc;
+            }
+            thead{
+                background: #1b202c;
+            }
+            tfoot{
+                background: #1b202c;
+            }
+        }
+    }
+}
+/* 6.36.14. WIDGET - CATEGORIES
+
+    ------------------------------------------------------------------------- */
+
+.widget_categories {
+    select{
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        width: 100%;
+        display: block;
+        color: #777;
+        left: 0;
+        top: 0;
+        padding: 10px 60px 10px 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    ul {
+        li{
+            &.cat-item {
+                padding-left: 18px;
+                padding-bottom: 3px;
+                a {
+                    display: inline;
+                    padding-left: 0;
+                    &:hover {
+                        color: #acb4b5;
+                    }
+                }
+            }
+        }
+        > li {
+            background-position: 0 6px;
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+
+    }
+    .children{
+        background: none;
+        li{
+            &.cat-item {
+                a {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+/* 6.36.15. WIDGET - ARCHIVE
+    ------------------------------------------------------------------------- */
+
+.widget.widget_archive{
+
+    ul {
+        li {
+            padding-left: 18px;
+            padding-bottom: 3px;
+            a {
+                display: inline;
+                &:hover {
+                    color: #acb4b5;
+                }
+            }
+        }
+        > li {
+            background-position: 0 6px;
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+    }
+    select {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #e3e3e3;
+    }
+}
+
+
+/* 6.36.16. WIDGETS - RSS
+    ------------------------------------------------------------------------- */
+
+.widget_rss {
+    ul {
+        li{
+            border-bottom: 1px solid #eee;
+            background-position: 0 11px;
+            margin-top: 25px;
+            padding-bottom: 25px;
+            cite {
+                font-style: italic;
+            }
+        }  
+    }
+}
+
+/* 6.36.17. WIDGETS - RECENT COMMENTS 
+    ------------------------------------------------------------------------- */
+.widget_recent_comments {
+    ul {
+        li {
+            list-style: none;
+            background-position: 0 11px;
+
+            .date {
+                padding: 2px 10px;
+                text-transform: uppercase;
+                color: #fff;
+                display: inline-block;
+            }
+            .recentcomments{
+                font-weight: $font-weight-bold;
+                a {
+                    font-style: italic;
+                    font-weight: normal;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                span{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+

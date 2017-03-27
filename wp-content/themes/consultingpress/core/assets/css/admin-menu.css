@@ -1,0 +1,363 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.redux-support-menu > th {
+    display: none;
+}
+
+.volcanno-theme-page,
+.volcanno-support-page{
+    margin: 0 15px;
+}
+
+.volcanno-theme-page a,
+.volcanno-support-page a{
+    color: #161616;
+    text-decoration: underline;
+    font-weight: bold;
+    
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.volcanno-theme-page a:hover,
+.volcanno-theme-support a:hover{
+    color: #0073AA;
+}
+
+.volcanno-theme-page,
+.volcanno-support-page{
+    padding: 30px 20px 20px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.volcanno-theme-page h1,
+.volcanno-support-page h1{
+    font-family: Arial, Roboto;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #161616;
+    margin-bottom: 20px;
+}
+
+.volcanno-theme-page p,
+.volcanno-support-page p {
+    font-family: Arial, Roboto;
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 0;
+    margin: 0;
+}
+
+.volcanno-theme-page label {
+    color: #161616;
+    font-family: Arial, Roboto;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.volcanno-theme-page .theme-info,
+.volcanno-support-page .support-info{
+    margin-bottom: 70px;
+}
+
+.support-details .theme-support-box {
+    width: 20%;
+    margin-right: 1%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.support-details.standard .theme-support-box {
+    width: 49%;
+}
+
+.support-details.clearfix.standard {
+    margin: 0 auto;
+}
+
+.theme-details .theme-image,
+.theme-details .theme-presentation-box {
+    width: 49%;
+    margin-right: 1%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.theme-details .theme-image img {
+    max-width: 100%;
+}
+
+.theme-details .theme-presentation-box,
+.support-details .theme-support-box{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    display: table;
+    background-image: url("../images/pixel-industry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.theme-details .theme-presentation-box .content,
+.support-details .theme-support-box .content{
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.theme-details .theme-presentation-box h2 {
+    font-family: Arial, Roboto;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #0073AA;
+}
+
+.support-details .theme-support-box {
+    min-height: 400px;
+}
+
+.support-details .theme-support-box.envato-login-box {
+    background-color: #7aac3b;
+    background-image: url("/images/envato.svg");
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: center;
+}
+
+.support-details .theme-support-box.envato-login-box a {
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: Arial, Roboto;
+}
+
+.support-details .theme-support-box.envato-login-box a:hover {
+    color: #eee;
+}
+
+.support-details .theme-support-box.divider-box {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    position: relative;
+}
+
+.support-details .theme-support-box.divider-box .content {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.support-details .theme-support-box.divider-box .content p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -5px;
+    top: -5px;
+}
+
+.support-details .theme-support-box.standard-login-box h2,
+.support-details .theme-support-box.support-register-box h2{
+    color: #0073AA;
+    font-family: Arial, Roboto;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.support-details .theme-support-box.support-register-box h2{
+    color: #c41313;
+}
+
+.support-details .theme-support-box.standard-login-box a,
+.support-details .theme-support-box.support-register-box a{
+    font-family: Arial, Roboto;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #161616;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.support-details .theme-support-box.standard-login-box a:hover,
+.support-details .theme-support-box.support-register-box a:hover {
+    color: #0073AA;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media only screen and (min-width: 0) and (max-width: 479px) {
+    .volcanno-theme-page, .volcanno-support-page {
+        padding: 30px 0;
+    }
+    
+    .theme-details .theme-image, .theme-details .theme-presentation-box,
+    .support-details .theme-support-box{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        float: left;
+        display: block;
+        min-height: initial !important;
+    }
+    
+    .theme-details .theme-presentation-box .content, .support-details .theme-support-box .content {
+        padding: 20px;
+        display: block;
+        height: auto !important;
+    }
+    
+    .support-details .theme-support-box.divider-box .content {
+        position: relative;
+        width: 100%;
+        top: initial;
+        left: initial;
+        margin: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .volcanno-theme-page, .volcanno-support-page {
+        padding: 30px 0;
+    }
+    
+    .theme-details .theme-image, .theme-details .theme-presentation-box,
+    .support-details .theme-support-box{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        float: left;
+        display: block;
+        min-height: initial !important;
+    }
+    
+    .theme-details .theme-presentation-box .content, .support-details .theme-support-box .content {
+        padding: 20px;
+        display: block;
+        height: auto !important;
+    }
+    
+    .support-details .theme-support-box.divider-box .content {
+        position: relative;
+        width: 100%;
+        top: initial;
+        left: initial;
+        margin: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .volcanno-theme-page, .volcanno-support-page {
+        padding: 30px 0;
+    }
+    
+    .theme-details .theme-image, .theme-details .theme-presentation-box,
+    .support-details .theme-support-box{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        float: left;
+        display: block;
+        min-height: initial !important;
+    }
+    
+    .theme-details .theme-presentation-box .content, .support-details .theme-support-box .content {
+        padding: 20px;
+        display: block;
+        height: auto !important;
+    }
+    
+    .support-details .theme-support-box.divider-box .content {
+        position: relative;
+        width: 100%;
+        top: initial;
+        left: initial;
+        margin: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .volcanno-theme-page, .volcanno-support-page {
+        padding: 30px 0;
+    }
+    
+    .theme-details .theme-image, .theme-details .theme-presentation-box,
+    .support-details .theme-support-box{
+        width: 48%;
+        margin-right: 1%;
+        margin-bottom: 20px;
+    }
+    
+    .theme-details .theme-presentation-box .content, .support-details .theme-support-box .content {
+        padding: 20px;
+    }
+    
+    .support-details .theme-support-box.divider-box .content {
+        position: relative;
+        width: 100%;
+        top: initial;
+        left: initial;
+        margin: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -o-border-radius: 0;
+    }
+}
+
+/** Fix for WPML  **/
+
+.wp-list-table .clearfix:before,
+.wp-list-table .clearfix:after {
+  display: none !important; 
+}

@@ -1,0 +1,359 @@
+/*  
+    6.23. ELEMENTS - PORTFOLIO
+    ========================================================================= */
+
+.row.portfolio-filters {
+    margin-bottom: 50px;
+}
+
+.portfolio-items-holder + .portfolio-pagination-holder {
+    margin-top: -120px;
+}
+
+
+.pagination {
+    width: 100%;
+    text-align: left;
+
+    > ul {
+        display: inline-block;
+        padding-left: 0;
+        > li {
+            list-style: none;
+            float: left;
+            margin-left: 5px;
+
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #eee;
+
+            > a, > span {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                padding-top: 3px;
+                font-size: 13px;
+
+                &.fa {
+                    font-size: 8px;
+                }
+            }
+
+            &.active > a, & > span.current {
+                color: #fff;
+            }
+
+            &:hover > a, &:hover > span {
+                color: #fff;
+            }
+
+            @include transition($default-transition);
+        }
+    }
+}
+
+.pagination.pagination-centered {
+    float: none;
+    text-align: center;
+}
+.pagination.pagination-right {
+    float: none;
+    text-align: right;
+}
+
+
+/*  6.23.1. PORTFOLIO GRID STYLING
+    ------------------------------------------------------------------------- */ 
+.cases-grid {
+    > li {
+        list-style: none;
+        margin-bottom: 30px;
+
+        &:nth-child(3n + 1) {
+            clear: both;
+        }
+    }
+
+    .portfolio-item {
+        width: 100%;
+
+        .media {
+            margin-bottom: 30px;
+        }
+
+        .body {
+            position: relative;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+
+            h2, h3, h4, h5, h6 {
+                position: relative;
+                font-size: 15px;
+                line-height: 23px;
+                margin-bottom: 5px;
+                padding-left: 20px;
+
+                &:hover {
+                    color: $mc-dark;
+                }
+
+                &::before {
+                    display: block;
+                    position: absolute;
+                    content: "\f061";
+                    font-family: "FontAwesome";
+                    font-size: 10px;
+                    left: 0;
+                    top: -2px;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                display: block;
+                content: "";
+                width: 70px;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+
+                @include transform-origin(left top);
+                @include transform(scale(0, 1));
+                @include transition(transform 0.4s cubic-bezier(1, 0, 0, 1));
+            }
+
+            .portfolio-tags {
+                padding-left: 0;
+
+                > li {
+                    list-style: none;
+                    padding-left: 20px;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &:hover .body::before {
+            @include transform(scale(1,1));  
+        }
+    }
+}
+
+
+/*  6.23.2. PORTFOLIO LIST STYLING
+    ------------------------------------------------------------------------- */ 
+.cases-list {
+    > li {
+        list-style: none;
+        margin-bottom: 50px;
+
+        .portfolio-item {
+            width: 100%;
+
+            .media {
+                width: 360px;
+                float: left;
+            }
+
+            .body {
+                padding-left: 390px;
+
+                h2, h3, h4, h5, h6 {
+                    font-size: 21px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                }
+
+                .portfolio-tags {
+                    padding-left: 0;
+
+                    > li {
+                        list-style: none;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*  6.23.3. PORTFOLIO FILTERS
+    ------------------------------------------------------------------------- */ 
+
+#filters {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+
+    > li {
+        position: relative;
+        list-style: none;
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        color: $mc-dark;
+        font-weight: $font-weight-medium;
+        font-size: 13px;
+        line-height: 20px;
+
+        cursor: pointer;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: -6px;
+            background-color: #fff;
+            @include transform-origin(right top);
+            @include transform(scale(0, 1));
+            @include transition(transform 0.4s cubic-bezier(1, 0, 0, 1));
+        }
+
+        &:hover::before {
+            @include transform-origin(left top);
+            @include transform(scale(1,1));  
+        }
+
+        &.filter-button.is-checked::before {
+            @include transform(scale(1, 1));
+        }
+    }
+}
+
+
+/*  6.23.4. PORTFOLIO WIDGETS - LATEST PROJECTS (IN SIDEBAR)
+    ------------------------------------------------------------------------- */ 
+.widget.widget_recent_entries {
+    > ul {
+        > li {
+            background-color: #fff;
+            border: 1px solid #eee;
+            margin-bottom: 2px;
+
+            @include transition($default-transition);
+
+            &::before {
+                top: 18px;
+                left: 20px;
+            }
+
+            a {
+                display: block;
+                padding: 20px 20px 20px 25px;
+            }
+
+            &:hover {
+                background-color: #eff3f7;
+
+
+                a {
+                    color: $mc-dark;
+                }
+            }
+        }
+    }
+}
+
+
+/*  6.23.5. PORTFOLIO SINGLE PAGE BACKGROUNDS
+    ------------------------------------------------------------------------- */ 
+[class*="cases-bkg"] {
+    @include bkg-img-styles();    
+}
+
+.cases-bkg01 {
+    background-image: url("img/cases/feasibillity-study-for-aqua-park-in-istria-croatia.jpg");
+}
+
+.cases-bkg02 {
+    background-image: url("img/cases/tourism-development-plan-for-spa-resort.jpg");
+}
+
+.cases-bkg03 {
+    background-image: url("img/cases/tourism-master-plan-for-wine-tourism.jpg");
+}
+
+.cases-bkg04 {
+    background-image: url("img/cases/tourism-plan-development-and-marketing.jpg");
+}
+
+.cases-bkg05 {
+    background-image: url("img/cases/tourism-marketing-strategy-machu-picchu.jpg");
+}
+
+.cases-bkg06 {
+    background-image: url("img/cases/implementation-of-visitor-information-service.jpg");
+}
+
+.cases-bkg07 {
+    background-image: url("img/cases/complete4-branding-and-marketing-for-galeo-tours.jpg");
+}
+
+.cases-bkg08 {
+    background-image: url("img/cases/branding-and-marketing-for-spa-class.jpg");
+}
+
+.cases-bkg09 {
+    background-image: url("img/cases/destination-management-plan.jpg");
+}
+
+.cases-bkg10 {
+    background-image: url("img/cases/destination-management-plan-for-philippines.jpg");
+}
+
+.cases-bkg11 {
+    background-image: url("img/cases/workforce-development-for-kai-resort-thailand.jpg");
+}
+
+.cases-bkg12 {
+    background-image: url("img/cases/management-10-year-business-strategy01.jpg");
+}
+
+.cases-bkg13 {
+    background-image: url("img/cases/management-market-assessment01.jpg");
+}
+
+.cases-bkg14 {
+    background-image: url("img/cases/management-geo-informatics.jpg");
+}
+
+.cases-bkg15 {
+    background-image: url("img/cases/management-avalast01.jpg");
+}
+
+.cases-bkg16 {
+    background-image: url("img/cases/management-customer-segmentation01.jpg");
+}
+
+.cases-bkg17 {
+    background-image: url("img/cases/management-crm01.jpg");
+}
+
+.cases-bkg18 {
+    background-image: url("img/cases/management-fork-logistics01.jpg");
+}
+
+.cases-bkg19 {
+    background-image: url("img/cases/management-alura01.jpg");
+}
+
+.cases-bkg20 {
+    background-image: url("img/cases/management-market-entry-min-and-herbs01.jpg");
+}
+
+.cases-bkg21 {
+    background-image: url("img/cases/management-global-.market-anaysis-global-construction01.jpg");
+}
+
+.cases-bkg22 {
+    background-image: url("img/cases/management-business-strategy-shoe-stars01.jpg");
+}

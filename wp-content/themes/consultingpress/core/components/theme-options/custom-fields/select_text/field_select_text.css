@@ -1,0 +1,21 @@
+.redux-container-select_text ul.redux-select-text {
+  margin: 0;
+  padding: 0;
+}
+.redux-container-select_text .redux-select-text-remove {
+  color: #F00;
+  padding: 2px 4px;
+  margin-left: 5px;
+}
+.redux-container-select_text .redux-select-text-remove:hover {
+  background: red;
+  color: #fff;
+  text-decoration: none;
+}
+.redux-container-select_text .redux-select-text-add {
+  margin-bottom: 5px;
+}
+.redux-container-select_text .select-text-select {
+  margin: 0 7px 7px 0;
+}
+

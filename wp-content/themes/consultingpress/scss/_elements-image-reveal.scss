@@ -1,0 +1,46 @@
+/*  
+    6.15. ELEMENTS - IMAGE REVEAL
+    ========================================================================= */
+
+.animated {
+    @include duration(800ms);
+}
+
+.image-reveal {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        z-index: 2;
+    }
+
+    &.animated {
+        @include duration(800ms);        
+    }
+}
+
+.image-reveal-mask{
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    right: 0;
+}
+
+.imageReveal{
+    @include animation-name(imageReveal);
+    @include duration(800ms);
+    @include function(easeInOut);
+    @include fill-mode(forward);
+}
+
+@include keyframes(imageReveal){
+    0% {width: 30%;}
+    100% { width: 0%;}
+}
